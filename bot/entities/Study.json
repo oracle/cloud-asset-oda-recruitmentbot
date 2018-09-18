@@ -1,0 +1,238 @@
+{
+  "name" : "Study",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Accounting & Finance",
+    "synonyms" : [ "accounting", "finance" ]
+  }, {
+    "canonicalName" : "Aeronautical & Manufacturing Engineering",
+    "synonyms" : [ "manufacturing" ]
+  }, {
+    "canonicalName" : "Agriculture & Forestry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "American Studies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Anatomy & Physiology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Anthropology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Archaeology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Architecture",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Art & Design",
+    "synonyms" : [ "Arts" ]
+  }, {
+    "canonicalName" : "Aural & Oral Sciences",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Biological Sciences",
+    "synonyms" : [ "biology" ]
+  }, {
+    "canonicalName" : "Building",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Business & Management",
+    "synonyms" : [ "Business administration" ]
+  }, {
+    "canonicalName" : "Celtic Studies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Chemical Engineering",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Chemistry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Civil Engineering",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Classics & Ancient History",
+    "synonyms" : [ "history" ]
+  }, {
+    "canonicalName" : "Communication & Media",
+    "synonyms" : [ "Communications" ]
+  }, {
+    "canonicalName" : "Complementary Medicine",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Computer Science",
+    "synonyms" : [ "software engineering" ]
+  }, {
+    "canonicalName" : "Counselling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Creative Writing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Criminology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dentistry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Drama",
+    "synonyms" : [ "Dance & Cinematics" ]
+  }, {
+    "canonicalName" : "East & South Asian Studies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Economics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Education",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Electrical & Electronic Engineering",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "English",
+    "synonyms" : [ "English Literature" ]
+  }, {
+    "canonicalName" : "Fashion",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Film Making",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Food Science",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Forensic Science",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "French",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Geography & Environmental Sciences",
+    "synonyms" : [ "geography" ]
+  }, {
+    "canonicalName" : "Geology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "General Engineering",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "German",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "History",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "History of Art",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hospitality",
+    "synonyms" : [ "Leisure" ]
+  }, {
+    "canonicalName" : "Iberian Languages/Hispanic Studies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Italian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Land & Property Management",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Law",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Librarianship & Information Management",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Linguistics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Marketing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Materials Technology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Mathematics",
+    "synonyms" : [ "math" ]
+  }, {
+    "canonicalName" : "Mechanical Engineering",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Medical Technology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Medicine",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Middle Eastern & African Studies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Music",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Nursing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Occupational Therapy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Optometry",
+    "synonyms" : [ "Ophthalmology & Orthoptics" ]
+  }, {
+    "canonicalName" : "Pharmacology & Pharmacy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Philosophy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Physics and Astronomy",
+    "synonyms" : [ "physics", "astronomy" ]
+  }, {
+    "canonicalName" : "Physiotherapy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Politics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Psychology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Robotics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Russian & East European Languages",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Social Policy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Social Work",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sociology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sports Science",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Theology & Religious Studies",
+    "synonyms" : [ "theology" ]
+  }, {
+    "canonicalName" : "Town & Country Planning and Landscape Design",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Veterinary Medicine",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Youth Work",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Artificial Intelligence",
+    "synonyms" : [ "AI" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Study" ]
+}

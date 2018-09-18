@@ -1,0 +1,25 @@
+{
+  "name" : "Dummy",
+  "type" : "NLPIntent",
+  "intentParameters" : [ {
+    "name" : "AllInfo",
+    "required" : true,
+    "entity" : "AllInfo"
+  } ],
+  "exampleData" : [ {
+    "sentence" : "a",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "a",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "a",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "a",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "a",
+    "exampleEntities" : [ ]
+  } ]
+}

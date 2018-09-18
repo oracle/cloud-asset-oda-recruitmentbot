@@ -1,0 +1,40 @@
+{
+  "name" : "JobRole",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Channels Sales Executive",
+    "synonyms" : [ "Channels", "channel", "channel sales manager", "channel sales director" ]
+  }, {
+    "canonicalName" : "Pre-sales Consultant",
+    "synonyms" : [ "Sales Consultant", "Information Architect", "Cloud Architect", "Consultant", "Pre-Sales" ]
+  }, {
+    "canonicalName" : "Marketing Executive",
+    "synonyms" : [ "Marketing Director", "Marketing Manager", "Marketing Communications Manager", "marketing exec", "exec marketing", "marketing management" ]
+  }, {
+    "canonicalName" : "Marketing Consultant",
+    "synonyms" : [ "Marketing Technologist" ]
+  }, {
+    "canonicalName" : "Sales Representative",
+    "synonyms" : [ "solution sales", "sales advisor" ]
+  }, {
+    "canonicalName" : "Sales Executive",
+    "synonyms" : [ "Sales Director", "Account Director", "Sales Manager", "Account Leader", "Account Manager", "sales exec", "exec sales", "sales management", "account management" ]
+  }, {
+    "canonicalName" : "VP of Sales",
+    "synonyms" : [ "VP Sales", "Chief Commercial Officer", "sales VP" ]
+  }, {
+    "canonicalName" : "VP of Marketing",
+    "synonyms" : [ "VP Marketing", "marketing VP" ]
+  }, {
+    "canonicalName" : "Marketing Representative",
+    "synonyms" : [ "Venue Sales" ]
+  }, {
+    "canonicalName" : "Executive",
+    "synonyms" : [ "exec", "senior", "director" ]
+  }, {
+    "canonicalName" : "Business Development Manager",
+    "synonyms" : [ "BDM", "business development" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter JobRole" ]
+}

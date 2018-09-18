@@ -1,0 +1,58 @@
+{
+  "name" : "Degree",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Master of Arts",
+    "synonyms" : [ "MA" ]
+  }, {
+    "canonicalName" : "Master of Science",
+    "synonyms" : [ "MS", "MSc" ]
+  }, {
+    "canonicalName" : "Master of Research",
+    "synonyms" : [ "MRes" ]
+  }, {
+    "canonicalName" : "Master of Studies",
+    "synonyms" : [ "MSt" ]
+  }, {
+    "canonicalName" : "Master of Business Administration",
+    "synonyms" : [ "MBA" ]
+  }, {
+    "canonicalName" : "Master of Library Science",
+    "synonyms" : [ "MLS", "MLIS", "MSLS" ]
+  }, {
+    "canonicalName" : "Master of Public Administration",
+    "synonyms" : [ "MPA" ]
+  }, {
+    "canonicalName" : "Master of Public Health",
+    "synonyms" : [ "MPH" ]
+  }, {
+    "canonicalName" : "Master of Social Work",
+    "synonyms" : [ "MSW" ]
+  }, {
+    "canonicalName" : "Master of Laws",
+    "synonyms" : [ "LLM" ]
+  }, {
+    "canonicalName" : "Master of Music",
+    "synonyms" : [ "MM", "MMus" ]
+  }, {
+    "canonicalName" : "Master of Education",
+    "synonyms" : [ "MEd", "MSed", "MIT", "MAEd", "MAT" ]
+  }, {
+    "canonicalName" : "Master of Engineering",
+    "synonyms" : [ "MEng" ]
+  }, {
+    "canonicalName" : "Master of Architecture",
+    "synonyms" : [ "March" ]
+  }, {
+    "canonicalName" : "Bachelor",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Master",
+    "synonyms" : [ "Masters" ]
+  }, {
+    "canonicalName" : "Doctor of Philosophy",
+    "synonyms" : [ "PhD" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Degree" ]
+}

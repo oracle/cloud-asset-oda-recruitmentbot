@@ -1,0 +1,7 @@
+{
+  "name" : "GraduationYear",
+  "patternExpression" : "(graduated|garduated) .*in '?\\d{2}(?:\\d{2})?",
+  "type" : "PATTERNBASED",
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

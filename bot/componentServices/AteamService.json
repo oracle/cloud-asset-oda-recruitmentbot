@@ -1,0 +1,12 @@
+{
+  "name" : "AteamService",
+  "url" : "https://34FAE8D4DA5F4F289EF05359491DBA78.mobile.ocp.oraclecloud.com:443/mobile/custom/recruitment_bot/components",
+  "headers" : [ ],
+  "credentials" : {
+    "type" : "mcs",
+    "mobileBackendId" : "d374b067-7d1a-4c31-aaf6-ea477b1b71ec",
+    "anonymous" : true,
+    "username" : null
+  },
+  "version" : "1.1"
+}

@@ -1,0 +1,12 @@
+{
+  "settings" : {
+    "Multistage_Pipeline" : true,
+    "Verbose_Output" : false,
+    "Pipeline_Output_Size" : 100,
+    "Result_Size" : 10,
+    "translator" : null
+  },
+  "conversationHistoryEnabled" : true,
+  "intentResultHistoryEnabled" : false,
+  "qnAResultHistoryEnabled" : false
+}

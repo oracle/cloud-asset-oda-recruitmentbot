@@ -1,0 +1,7 @@
+{
+  "name" : "Age",
+  "patternExpression" : "((I am|i am|My age is|my age is) \\d{2})|\\d{2} years old",
+  "type" : "PATTERNBASED",
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

@@ -1,0 +1,6 @@
+*/.DS_Store
+componentservice/node_modules/
+componentservice/package/
+componentservice/reports/
+componentservice/*.zip
+componentservice/.vscode

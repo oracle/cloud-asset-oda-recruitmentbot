@@ -1,0 +1,19 @@
+{
+  "name" : "CivilState",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Married",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Widow",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Single",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Divorced",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity3" ]
+}

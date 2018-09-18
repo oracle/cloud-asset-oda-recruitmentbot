@@ -1,0 +1,13 @@
+{
+  "name" : "Pastime",
+  "type" : "ENUMENTITIES",
+  "enumValues" : [ {
+    "canonicalName" : "Hobby",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sports",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Pastime", "What is your value for Pastime?" ]
+}

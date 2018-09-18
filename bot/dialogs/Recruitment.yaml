@@ -1,0 +1,450 @@
+metadata:
+  platformVersion: 1.0
+main: true
+name: Recruitment
+context:
+  variables:
+    allInfo: "AllInfo"
+    jobInput: "string"
+    moreJobInput: "string"
+    allJobInput: "string"
+    selfInput: "string"
+    selfMoreInput: "string"
+    allInput: "string"
+    retry: "string"
+    retrySelf: "string"
+    iresult: "nlpresult"
+    age: "int"
+    jobCategories: "string"
+    nextState: "string"
+    partTimeDone: "string"
+    yogaDone: "string"
+    sportsDone: "string"
+    moreJobInfoProvided: "string"
+    moreSuffix: "string"
+    jobs: "string"        
+states:
+  reset:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "allInfo,jobInput,moreJobInput,allJobInput,selfInput,selfMoreInput,allInput,retry,retrySelf,iresult,age,nextState,partTimeDone,yogaDone,  sportsDone,moreJobInfoProvided,moreSuffix,jobs"
+  # do clearBoarded for now, so we get welcome message every time, better for demos. Comment out this state if you want to see onboarding message only first time 
+  clearBoarded:
+    component: "System.SetVariable"
+    properties:
+      variable: "user.isBoarded"
+      value: "false"
+  loadCats:
+    component: "System.SetVariable"
+    properties:
+      variable: "jobCategories"
+      value: 
+        Sales Representative: Sales
+        Solution Sales: Sales
+        Marketing Consultant: Marketing
+        Junior Sales Representative: Sales
+        VP of Sales: Sales
+        Business Development Manager: Sales
+        Sales Executive: Sales or Sales Management
+        Channels Sales Executive: Sales or Sales Management
+        Pre-sales Consultant: Pre-Sales
+        Marketing Executive: Marketing        
+        VP of Marketing: Marketing              
+        Executive: Marketing or Sales Executive
+  checkOnboarding:
+    component: "System.Switch"
+    properties:
+      source: "${user.isBoarded}"
+      values:
+      - "true"
+    transitions:
+      actions:
+        true: "start"
+        NONE: "onBoarding"
+  onBoarding:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: true
+      metadata: 
+        responseItems:         
+        - type: "text"  
+          text: "Hello, I am Lisa, your digital recruitment assistant for marketing and sales jobs at Oracle."  
+        - type: "attachment" 
+          attachmentType: "image" 
+          attachmentUrl: "https://4.bp.blogspot.com/-rNAojDzy5L4/VbUTdR1_ygI/AAAAAAAATD0/nW787POU4-A/s1600/oracle.png"
+        - type: "text"  
+          text: "You can use me to find a job that matches your wishes, interests and qualifications. To find the best match, I will ask you a number of questions about yourself and the job you are looking for. The more information you provide, the better I can match you!"  
+        - type: "text"  
+          text: "If you are not looking for a sales or marketing job, or you prefer to see just a list of available jobs, I recommend you visit our career website."  
+          actions: 
+          - label: "Let's get started!"
+            type: "postback"
+            payload: 
+              action: "start"  
+          - label: "Visit Website"
+            type: "url"
+            payload: 
+              url: "https://oracle.taleo.net/careersection/2/jobsearch.ftl?lang=en"
+    transitions: {}
+  setBoarded:
+    component: "System.SetVariable"
+    properties:
+      variable: "user.isBoarded"
+      value: "true"
+  start:
+    component: "System.Text"
+    properties:
+      variable: "jobInput"
+      prompt: "${((retry.value!'true')=='true')?then('What kind of job are you interested in?','I am sorry, I dont understand you. I am a bot only designed to help you find sales and marketing jobs, still learning..;-). Can you maybe rephrase the type of job you are looking for?')} "
+    transitions: {}    
+  matchJobInput:
+    component: "System.MatchEntity"
+    properties:
+      sourceVariable: "jobInput"
+      variable: "allInfo"
+    transitions:
+      actions:
+        match: checkMoreInfo
+        nomatch: checkRetry
+  checkRetry:
+    component: "System.ConditionEquals"
+    properties:
+      variable: 
+      source: ${retry.value!'true'}
+      value: "true"
+    transitions:
+      actions: 
+        equal: setRetry
+        notequal: cannotHelp
+  setRetry:
+    component: "System.SetVariable"
+    properties:
+      variable: "retry"
+      value: "false"
+  resetJobInput:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "jobInput"
+    transitions:
+      next: start    
+  checkMoreInfo:
+    component: "System.Switch"
+    properties:
+      source: "${((allInfo.value.JobRole!'')!='')?then('yes','no')}-${((allInfo.value.JobDomain!'')!='')?then('yes','no')}"
+      values:
+      - "no-no"
+      - "yes-no"
+      - "no-yes"
+      - "yes-yes"
+    transitions:
+      actions:
+        no-no: "moreInfoJobAndDomain"
+        yes-no: "moreInfoDomain"
+        no-yes: "moreInfoJob"
+        yes-yes: "jobSummary"
+  moreInfoJobAndDomain:
+    component: "System.Text"
+    properties:
+      variable: "moreJobInput"
+      prompt: "Could you elaborate a bit further, what exactly are you looking for? Do you have a specific job role in mind, or a domain${((allInfo.value.Industry!'')=='')?then(' or industry','')} you prefer to work in?"
+    transitions: 
+      next: "combineInput"
+  moreInfoJob:
+    component: "System.Text"
+    properties:
+      variable: "moreJobInput"
+      prompt: "Could you elaborate a bit further, for example, do you have a specific job role${((allInfo.value.Industry!'')=='')?then(' or industry','')} in mind? "
+    transitions: 
+      next: "combineInput"
+  moreInfoDomain:
+    component: "System.Text"
+    properties:
+      variable: "moreJobInput"
+      prompt: "Could you elaborate a bit further, for example, is there a specific domain${((allInfo.value.Industry!'')=='')?then(' or industry','')} you would like to work in? Or can you give a salary indication if that is important to you?"
+    transitions:
+      next: "combineInput"
+  combineInput:
+    component: "System.SetVariable"
+    properties:
+      variable: "allJobInput"
+      # we prefix with zero, so when we initialize allInfo it always has a value because we added the NUMBER entity, so showProfile expressions do not crash
+      value: "${('0 '+ jobInput.value?string + ' '+moreJobInput.value?string)}"
+  matchMoreJobInput:
+    component: "System.MatchEntity"
+    properties:
+      sourceVariable: "moreJobInput"
+      variable: "allInfo"
+    transitions:
+      actions:
+        match: jobSummary
+        nomatch: setMoreJobInfoProvided
+  setMoreJobInfoProvided:
+    component: "System.SetVariable"
+    properties:
+      variable: "moreJobInfoProvided"
+      value: "false" 
+  jobSummary:
+    component: "System.Output"
+    properties:
+      keepTurn: true
+      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${((allInfo.value.JobRole!'')!='')?then(jobCategories.value[allInfo.value.JobRole]+' position ',((allInfo.value.JobCategory!'')!='')?then(allInfo.value.JobCategory+' job ',''))}for you${((allInfo.value.JobDomain!'')!='')?then(', especially in the '+allInfo.value.JobDomain+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry+' area',''))}!"
+    transitions: {}
+  startJobHooks:
+    component: "System.SetVariable"
+    properties:
+      variable: "nextState"
+      value: "askSelf"
+    transitions:
+      next: "jobHooks"    
+  askSelf:
+    component: "System.Text"
+    properties:
+      variable: "selfInput"
+      prompt: "${((retrySelf.value!'true')=='true')?then('Can you tell a bit more about yourself?','I am sorry, I didnt get that, can you for example tell about your education and work experience?')} "
+    transitions: {}    
+  matchSelfInput:
+    component: "System.MatchEntity"
+    properties:
+      sourceVariable: "selfInput"
+      variable: "allInfo"
+    transitions:
+      actions:
+        match: startSelfHooks1
+        nomatch: checkRetrySelf
+  checkRetrySelf:
+    component: "System.ConditionEquals"
+    properties:
+      variable: 
+      source: ${retrySelf.value!'true'}
+      value: "true"
+    transitions:
+      actions: 
+        equal: setRetrySelf
+        notequal: unresolvedSelf
+  setRetrySelf:
+    component: "System.SetVariable"
+    properties:
+      variable: "retrySelf"
+      value: "false"
+  resetselfInput:
+    component: "System.ResetVariables"
+    properties:
+      variableList: "selfInput"
+    transitions:
+      next: "askSelf"    
+
+  startSelfHooks1:
+    component: "System.SetVariable"
+    properties:
+      variable: "nextState"
+      value: "askMoreSelf"
+    transitions:
+      next: "selfHooks"      
+  askMoreSelf:
+    component: "System.Text"
+    properties:
+      variable: "selfMoreInput"
+      prompt: "Anything else you like to share about yourself that would help me find the best job for you?" 
+    transitions: {}    
+  matchMoreSelfInput:
+    component: "System.MatchEntity"
+    properties:
+      sourceVariable: "selfMoreInput"
+      variable: "allInfo"
+    transitions:
+      actions:
+        match: startSelfHooks2
+        nomatch: setIntentInput
+  startSelfHooks2:
+    component: "System.SetVariable"
+    properties:
+      variable: "nextState"
+      value: "setIntentInput"
+    transitions:
+      next: "selfHooks"      
+  unresolvedSelf:
+    component: "System.Output"
+    properties:
+      keepTurn: true
+      text: "Not sure I got that, but let's continue anyway ;-)"
+    transitions: 
+      next: "setIntentInput"
+
+  # we have some multi-value entities like company, pastime, and education. Unfortunately, MatchEntity comp only matches first value
+  # so we do an intent matching so we can get arrays of entity matches for these entities
+  setIntentInput:
+    component: "System.SetVariable"
+    properties:
+      variable: "allInput" 
+      # we start with "a " so we always have matching Dummy intent so we can retrieve all entity matches :-)
+      value: "a ${allJobInput} ${selfInput} ${selfMoreInput}"
+  intent:
+    component: "System.Intent"
+    properties:
+      sourceVariable: "allInput"
+      variable: "iresult"
+      confidenceThreshold: 0.1
+    transitions: {}
+  startJobHooks2:
+    component: "System.SetVariable"
+    properties:
+      variable: "nextState"
+      value: "updateJobInfo"
+    transitions:
+      next: "jobHooks"      
+  # populateCompositeEntity sets a child entity value to an array of ALL matches found, if not value found it sets the value to empty array. TODO: rename to populateMutiValueEntities
+  updateJobInfo:
+    component: "populateCompositeEntity"
+    properties:
+      variable: "allInfo"
+      nlpVariable: "iresult"
+      entityNames: "JobCategory,JobRole,JobDomain,JobKeywords,Industry,Salary"
+  updateSelfInfo:
+    component: "populateCompositeEntity"
+    properties:
+      variable: "allInfo"
+      nlpVariable: "iresult"
+      entityNames: "Pastime,Language,Education,Company,Degree"
+  computeExperience:
+    component: "computeExperience"
+    properties:
+      nlpVariable: "iresult"
+      outputVariable: "yearsExperience"
+      entityName: "YearsExperience"
+  computeAge:
+    component: "computeAge"
+    properties:
+      nlpVariable: "iresult"
+      outputVariable: "age"
+      entityName: "Age"
+  findJobs:
+    component: "findJobs"
+  finalMessage:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: true
+      metadata: 
+        responseItems:         
+        - type: "text"  
+          text: "Thank you for your input.${(yearsExperience.value > 4)?then(' We are definitely interested in experienced people like you'+(allInfo.value.Company?size != 0)?then(', especially with a track record at '+allInfo.value.Company?join(' and ')+'!','!'),(  (allInfo.value.IndStudent?has_content) || ((age.value!100)?number < 26))?then(' We are looking for young talent like you!',''))} Below you can find some nice positions for you that hopefully are a good fit ;)" 
+        - type: "cards" 
+          cardLayout: "horizontal"
+          cards:
+          - title: "${jobs.title}"
+            description: "${jobs.description}"
+            imageUrl: "${jobs.image}"
+            iteratorVariable: "jobs"
+            actions: 
+            - label: "More Info"
+              type: "url"
+              payload: 
+                url: "https://www.oracle.com/uk/corporate/careers/work-at-oracle/professional-development.html"
+        globalActions: 
+        - label: "My Profile"
+          type: "postback"
+          payload: 
+            action: "showProfile"
+    transitions:
+      actions: 
+        showProfile: "showProfile"    
+        textReceived: "reset"
+  showProfile:
+    component: "System.Output"
+    properties:
+      keepTurn: true
+      text: |-
+        Here is a summary of the profile information you provided:
+        
+        Job Category: ${allInfo.value.JobCategory?join(' or ')}
+        Domain: ${allInfo.value.JobDomain?join(' or ')}
+        Role: ${allInfo.value.JobRole?join(' or ')}
+        Industry: ${allInfo.value.Industry?join(' or ')}
+        Keywords: ${allInfo.value.JobKeywords?join(', ')}
+        Salary Indication: ${(allInfo.value.Salary?size!=0)?then(allInfo.value.Salary?join('#')?upper_case?replace(' ','')?replace('K','.000')?replace('-','.000')?replace('#','-'),(iresult.value.entityMatches['CURRENCY']?has_content)?then(allInfo.value.CURRENCY.amount,""))}
+        Parttime: ${allInfo.value.IndPartTime?has_content?then("Yes","No")}
+        
+        Age: ${age.value!""}
+        Civil State: ${allInfo.value.CivilState!""}
+        Student: ${allInfo.value.IndStudent?has_content?then("Yes","No")}
+        Employers: ${allInfo.value.Company?join(' and ')}
+        Work Experience: ${(yearsExperience.value!=0)?then(yearsExperience.value+' years','')}
+        Education: ${allInfo.value.Education?join(' and ')}
+        Degrees: ${allInfo.value.Degree?join(' and ')}
+        Languages: ${allInfo.value.Language?join(' and ')}
+        Hobbies: ${allInfo.value.Pastime?join(' and ')}
+        
+    transitions:
+      return: "done"
+  bye:
+    component: "System.Output"
+    properties:
+      text: "Thank you!"
+    transitions:
+      return: "done"
+  cannotHelp:
+    component: "System.CommonResponse"
+    properties:
+      processUserMessage: false
+      metadata: 
+        responseItems:         
+        - type: "text"  
+          text: "Sorry, I still didn't get the kind of job you are looking for. Why don't you use our search capabilities on our career website instead." 
+          actions: 
+          - label: "Visit Website"
+            type: "url"
+            payload: 
+              url: "https://oracle.taleo.net/careersection/2/jobsearch.ftl?lang=en"
+    transitions:
+      return: "done"      
+
+##### JOB HOOKS ####
+  jobHooks:
+    component: "System.Output"
+    properties:
+      keepTurn: true
+      text: "${(allInfo.value.IndPartTime?has_content && (partTimeDone!='true'))?then('We also offer various job-schedules - including part-time contracts :)','')}"
+    transitions: {}
+  setPartTimeDone:
+    component: "System.SetVariable"
+    properties:
+      variable: "partTimeDone"
+      value: "${allInfo.value.IndPartTime?has_content?then('true','false')}"
+    transitions:
+      next: "${nextState}"
+
+
+##### SELF HOOKS ####
+  selfHooks:
+    component: "System.Output"
+    properties:
+      keepTurn: true
+      text: "${((allInfo.value.Sports!'')=='Yoga' && (yogaDone!='true'))?then('A Yoga-enthusiast huh? I love it! In fact, we do in-house Yoga sessions sometimes. Good for your body and soul!','')}"
+    transitions: {}
+  setYogaDone:
+    component: "System.SetVariable"
+    properties:
+      variable: "yogaDone"
+      value: "${((allInfo.value.Sports!'')=='Yoga')?then('true','false')}"
+    transitions:       
+      next: "${((allInfo.value.Sports!'')=='Yoga')?then(nextState,'sportsInfo')}"      
+  sportsInfo:
+    component: "System.Output"
+    properties:
+      keepTurn: true
+      text: "${((allInfo.value.Sports!'')!='' && (sportsDone!='true'))?then(allInfo.value.Sports+'-enthusiast huh? I love it! In fact, we offer great benefits to our employees for them to maintain a healthy lifestyle. We have discounts on fitness clubs, various sports etc. ','')}"
+    transitions: {}
+  setSportsDone:
+    component: "System.SetVariable"
+    properties:
+      variable: "sportsDone"
+      value: "${((allInfo.value.Sports!'')!='')?then('true','false')}"
+    transitions:       
+      next: "${nextState}"
+# call job hooks as well, might be provided during self info gathering   
+  doJobHooks:
+    component: "System.SetVariable"
+    properties:
+      variable: "nextState"
+      value: "${nextState}"
+    transitions:
+      next: "jobHooks"    

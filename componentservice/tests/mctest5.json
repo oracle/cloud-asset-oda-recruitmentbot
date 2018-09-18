@@ -1,0 +1,326 @@
+[
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "text",
+        "text": "hi"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Hello sdavelaar, I am Lisa, your digital recruitment assistant for marketing and sales jobs at Oracle.",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "attachment": {
+          "type": "image",
+          "url": "https://4.bp.blogspot.com/-rNAojDzy5L4/VbUTdR1_ygI/AAAAAAAATD0/nW787POU4-A/s1600/oracle.png"
+        },
+        "type": "attachment",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "You can use me to find a job that matches your wishes, interests and qualifications. To find the best match, I will ask you a number of questions about yourself and the job you are looking for. The more information you provide, the better I can match you!",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "If you are not looking for a sales or marketing job, or you prefer to see just a list of available jobs, I recommend you visit our career website.",
+        "type": "text",
+        "actions": [
+          {
+            "postback": {
+              "variables": {},
+              "action": "start",
+              "system.state": "onBoarding"
+            },
+            "label": "Let's get started!",
+            "type": "postback"
+          },
+          {
+            "label": "Visit Website",
+            "type": "url",
+            "url": "https://oracle.taleo.net/careersection/2/jobsearch.ftl?lang=en"
+          }
+        ],
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "postback",
+        "postback": {
+          "variables": {},
+          "action": "start",
+          "system.state": "onBoarding"
+        }
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "What kind of job are you interested in? ",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "text",
+        "text": "a senior executive role"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Could you elaborate a bit further, for example, is there a specific domain or industry you would like to work in? Or can you give a salary indication if that is important to you?",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "text",
+        "text": "I want a senior position with a territory of at least one country"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Thank you, I'm sure I can find a suitable Marketing or Sales Executive position for you!",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Can you tell a bit more about yourself? ",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "text",
+        "text": "I like sports - particularly sailing and I have a large garden which spend a lot of time in"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Sports-enthusiast huh? I love it! In fact, we offer great benefits to our employees for them to maintain a healthy lifestyle. We have discounts on fitness clubs, various sports etc. ",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Anything else you like to share about yourself that would help me find the best job for you?",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "text",
+        "text": "I have a high school education but didn’t goto university but I have 25 years and experience working in the Mobile industry"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Thank you for your input. I think I have some nice Executive positions for you that are a good fit ;)",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "And we are definitely interested in experienced people like you!",
+        "type": "text",
+        "globalActions": [
+          {
+            "postback": {
+              "variables": {},
+              "action": "showProfile",
+              "system.state": "finalMessage"
+            },
+            "label": "My Profile",
+            "type": "postback"
+          },
+          {
+            "postback": {
+              "variables": {},
+              "action": "showJobs",
+              "system.state": "finalMessage"
+            },
+            "label": "Show Jobs",
+            "type": "postback"
+          }
+        ],
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "postback",
+        "postback": {
+          "variables": {},
+          "action": "showProfile",
+          "system.state": "finalMessage"
+        }
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Here is a summary of the profile information you provided:\n\nJob Category: \nDomain: Mobile\nRole: Executive\nIndustry: Education\nKeywords: Senior position\nSalary Indication: \nParttime: No\n\nAge: \nCivil State: \nStudent: No\nEmployers: \nWork Experience: 25 years\nEducation: \nDegrees: \nLanguages: \nHobbies: Sports and Sailing and Gardening",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "I am a bot that is still learning, can you please provide feedback on the quality of the answers so I can improve myself?",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2",
+      "messagePayload": {
+        "type": "text",
+        "text": "no"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Thank you!",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "79401c80-0d24-a870-3734-df7c9e0ad2c2"
+    }
+  }
+]

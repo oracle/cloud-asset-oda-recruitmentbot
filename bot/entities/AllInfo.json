@@ -1,0 +1,67 @@
+{
+  "name" : "AllInfo",
+  "type" : "COMPOSITEBAG",
+  "enumValues" : [ {
+    "canonicalName" : "Education",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "CivilState",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Degree",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "IndPartTime",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "IndStudent",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Industry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "JobCategory",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "JobDomain",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "JobRole",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "JobKeywords",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Language",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "CURRENCY",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sports",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Age",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "GraduationYear",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Salary",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "YearsExperience",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pastime",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Company",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "IndTrainee",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

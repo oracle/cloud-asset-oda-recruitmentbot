@@ -1,0 +1,11 @@
+{
+  "services": [
+    {
+      "type": "component",
+      "uri": "/components"
+    }
+  ],
+  "componentPaths": [
+    "components"
+  ]
+}

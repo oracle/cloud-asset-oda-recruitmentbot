@@ -1,0 +1,100 @@
+{
+  "name" : "Sports",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Archery",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Badminton",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Baseball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Basketball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Base Jumping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Body Building",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Canoeing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cycling",
+    "synonyms" : [ "Bicycling" ]
+  }, {
+    "canonicalName" : "Polo",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Football",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Golf",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fitness",
+    "synonyms" : [ "keeping fit", "going to the gym" ]
+  }, {
+    "canonicalName" : "Aerobics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Jogging",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Running",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Kite Boarding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Martial Arts",
+    "synonyms" : [ "MMA" ]
+  }, {
+    "canonicalName" : "Sky Diving",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Swimming",
+    "synonyms" : [ "Swim" ]
+  }, {
+    "canonicalName" : "Tennis",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Soccer",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rugby",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hockey",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Squash",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Icehockey",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Korfball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Handball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Tabletennis",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Yoga",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sports",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cricket",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Sports" ]
+}

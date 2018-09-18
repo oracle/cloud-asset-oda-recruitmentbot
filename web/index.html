@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <script>
+                !function(e,t,n,r){
+                    function s(){try{var e;if((e="string"==typeof this.response?JSON.parse(this.response):this.response).url){var n=t.getElementsByTagName("script")[0],r=t.createElement("script");r.async=!0,r.src=e.url,n.parentNode.insertBefore(r,n)}}catch(e){}}var o,p,a,i=[],c=[];e[n]={init:function(){o=arguments;var e={then:function(t){return c.push({type:"t",next:t}),e},catch:function(t){return c.push({type:"c",next:t}),e}};return e},on:function(){i.push(arguments)},render:function(){p=arguments},destroy:function(){a=arguments}},e.__onWebMessengerHostReady__=function(t){if(delete e.__onWebMessengerHostReady__,e[n]=t,o)for(var r=t.init.apply(t,o),s=0;s<c.length;s++){var u=c[s];r="t"===u.type?r.then(u.next):r.catch(u.next)}p&&t.render.apply(t,p),a&&t.destroy.apply(t,a);for(s=0;s<i.length;s++)t.on.apply(t,i[s])};var u=new XMLHttpRequest;u.addEventListener("load",s),u.open("GET",r+"/loader.json",!0),u.responseType="json",u.send()
+                }(window,document,"Bots", "https://recruitmentweb-pmomcenas2.uscom-central-1.oraclecloud.com/static/");
+                </script>            
+</head>    
+<body style="margin:0px;">
+
+<img src="images/recruitment.png" style="width:100%;"/>
+
+<script>
+        var initPromise = Bots.init({
+            appId: '5b9f715f9398d60022d5ff84',
+            locale: 'en-US',
+        
+        customColors: {
+            brandColor: '65758e',
+            conversationColor: '65758e',
+            actionColor: '65758e',
+        },
+    
+        customText: {
+            actionPostbackError: 'An error occurred while processing your action. Please try again.',
+            clickToRetry: 'Message not delivered. Click to retry.',
+            conversationTimestampHeaderFormat: 'MMMM D YYYY, h:mm A',
+            fetchHistory: 'Load more',
+            fetchingHistory: 'Retrieving history...',
+            headerText: 'How can we help?',
+            inputPlaceholder: 'Type a message...',
+            invalidFileError: 'Only images are supported. Choose a file with a supported extension (jpg, jpeg, png, gif, or bmp).',
+            introductionText: 'We\'re here to talk, so ask us anything!',
+            locationNotSupported: 'Your browser does not support location services or it’s been disabled. Please type your location instead.',
+            locationSecurityRestriction: 'This website cannot access your location. Please type your location instead.',
+            locationSendingFailed: 'Could not send location',
+            locationServicesDenied: 'This website cannot access your location. Allow access in your settings or type your location instead.',
+            messageError: 'An error occurred while sending your message. Please try again.',
+            messageIndicatorTitlePlural: '({count}) New messages',
+            messageIndicatorTitleSingular: '({count}) New message',
+            messageRelativeTimeDay: '{value}d ago',
+            messageRelativeTimeHour: '{value}h ago',
+            messageRelativeTimeJustNow: 'just now',
+            messageRelativeTimeMinute: '{value}m ago',
+            messageTimestampFormat: 'hh:mm A',
+            messageSending: 'Sending...',
+            messageDelivered: 'Delivered',
+            sendButtonText: 'Send',
+            settingsHeaderText: 'Settings',
+            tapToRetry: 'Message not delivered. Tap to retry.',
+            unsupportedMessageType: 'Unsupported message type.',
+            unsupportedActionType: 'Unsupported action type.'
+          }
+        });
+    
+        
+   </script>
+
+
+</body>
+
+</html>

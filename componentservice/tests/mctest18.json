@@ -1,0 +1,315 @@
+[
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "text",
+        "text": "hi"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Hello sdavelaar, I am Lisa, your digital recruitment assistant for marketing and sales jobs at Oracle.",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "attachment": {
+          "type": "image",
+          "url": "https://4.bp.blogspot.com/-rNAojDzy5L4/VbUTdR1_ygI/AAAAAAAATD0/nW787POU4-A/s1600/oracle.png"
+        },
+        "type": "attachment",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "You can use me to find a job that matches your wishes, interests and qualifications. To find the best match, I will ask you a number of questions about yourself and the job you are looking for. The more information you provide, the better I can match you!",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "If you are not looking for a sales or marketing job, or you prefer to see just a list of available jobs, I recommend you visit our career website.",
+        "type": "text",
+        "actions": [
+          {
+            "postback": {
+              "variables": {},
+              "action": "start",
+              "system.state": "onBoarding"
+            },
+            "label": "Let's get started!",
+            "type": "postback"
+          },
+          {
+            "label": "Visit Website",
+            "type": "url",
+            "url": "https://oracle.taleo.net/careersection/2/jobsearch.ftl?lang=en"
+          }
+        ],
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "postback",
+        "postback": {
+          "variables": {},
+          "action": "start",
+          "system.state": "onBoarding"
+        }
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "What kind of job are you interested in? ",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "text",
+        "text": "I want a pre-sales job"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Could you elaborate a bit further, for example, is there a specific domain or industry you would like to work in? Or can you give a salary indication if that is important to you?",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "text",
+        "text": "retail shopping and I am looking for about £150k"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Thank you, I'm sure I can find a suitable Pre-Sales position for you, especially in the Retail area!",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Can you tell a bit more about yourself? ",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "text",
+        "text": "OK so Iive up North and I like cricket"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Cricket-enthusiast huh? I love it! In fact, we offer great benefits to our employees for them to maintain a healthy lifestyle. We have discounts on fitness clubs, various sports etc. ",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Anything else you like to share about yourself that would help me find the best job for you?",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "text",
+        "text": "enjoy gardening and would like my job to include travel"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Thank you for your input. I think I have some nice Pre-sales consultant positions for you that are a good fit ;)",
+        "type": "text",
+        "globalActions": [
+          {
+            "postback": {
+              "variables": {},
+              "action": "showProfile",
+              "system.state": "finalMessage"
+            },
+            "label": "My Profile",
+            "type": "postback"
+          },
+          {
+            "postback": {
+              "variables": {},
+              "action": "showJobs",
+              "system.state": "finalMessage"
+            },
+            "label": "Show Jobs",
+            "type": "postback"
+          }
+        ],
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "postback",
+        "postback": {
+          "variables": {},
+          "action": "showProfile",
+          "system.state": "finalMessage"
+        }
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Here is a summary of the profile information you provided:\n\nJob Category: Pre-sales\nDomain: \nRole: Pre-sales consultant\nIndustry: Retail\nKeywords: Travelling\nSalary Indication: £150.000\nParttime: No\n\nAge: \nCivil State: \nStudent: No\nEmployers: \nWork Experience: \nEducation: \nDegrees: \nLanguages: \nHobbies: Shopping and Gardening and Cricket",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "I am a bot that is still learning, can you please provide feedback on the quality of the answers so I can improve myself?",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  },
+  {
+    "agent": "client",
+    "message": {
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3",
+      "messagePayload": {
+        "type": "text",
+        "text": "no"
+      },
+      "profile": {
+        "firstName": "sdavelaar",
+        "locale": "en_US"
+      }
+    }
+  },
+  {
+    "agent": "bot",
+    "message": {
+      "messagePayload": {
+        "text": "Thank you!",
+        "type": "text",
+        "channelExtensions": {}
+      },
+      "userId": "005be9dc-19ec-0670-7834-7c739e21b5e3"
+    }
+  }
+]

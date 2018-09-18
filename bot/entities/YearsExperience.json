@@ -1,0 +1,7 @@
+{
+  "name" : "YearsExperience",
+  "patternExpression" : "(for|worked|working|work|have|about|with|and) \\d{1,2} year",
+  "type" : "PATTERNBASED",
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity2" ]
+}

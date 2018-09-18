@@ -1,0 +1,12 @@
+{
+  "name" : "Education",
+  "type" : "DERIVED",
+  "parentEntity" : "Study",
+  "namedEntityRuleParams" : [ {
+    "value" : "studied,studying,bachelor,degree in,graduated in,master,and,master in,bachelor in,in,BSc,MSc,I am an,I am a",
+    "rule" : {
+      "name" : "PRECEDINGPHRASE"
+    }
+  } ],
+  "prompts" : [ "Please enter Entity3" ]
+}

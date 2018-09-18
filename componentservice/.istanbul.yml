@@ -1,0 +1,6 @@
+instrumentation:
+  excludes: ['spec/**', 'node_modules/**', 'coverage', 'lib/**', 'registry.js']
+  include-all-sources: true
+reporting:
+  dir: './reports/coverage'
+  print: detail

@@ -1,0 +1,835 @@
+{
+  "name" : "Hobby",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Aircraft Spotting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Airbrushing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Airsofting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Acting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Aeromodeling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Amateur Astronomy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Amateur Radio",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Animals",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Arts",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Aquarium",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Astrology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Astronomy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Back Gammon",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Birding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Blacksmithing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Blogging",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "BoardGames",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Boating",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Bonsai Tree",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Bookbinding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Boomerangs",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Bowling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Brewing Beer",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Bridge Building",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Bringing Food To The Disabled",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Building A House For Habitat For Humanity",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Building Dollhouses",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Butterfly Watching",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Button Collecting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cake Decorating",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Calligraphy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Camping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Candle Making",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cartooning",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Car Racing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Casino Gambling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cave Diving",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Ceramics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cheerleading",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Chess",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Church",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cigar Smoking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cloud Watching",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Coin Collecting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting Antiques",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting Artwork",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting Hats",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting Music Albums",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting RPM Records",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting Sports Cards",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting Swords",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Coloring",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Compose Music",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Computer activities",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Conworlding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cooking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cosplay",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Crafts",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Crafts (unspecified)",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Crochet",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Crocheting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cross-Stitch",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Crossword Puzzles",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dancing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Darts",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Diecast Collectibles",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Digital Photography",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dodgeball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dolls",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dominoes",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Drawing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dumpster Diving",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Eating out",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Educational Courses",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Electronics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Embroidery",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Entertaining",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Exercise",
+    "synonyms" : [ "aerobics" ]
+  }, {
+    "canonicalName" : "Falconry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fast cars",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Felting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fencing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fire Poi",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fishing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Floorball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Floral Arrangements",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fly Tying",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Four Wheeling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Freshwater Aquariums",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Frisbee Golf",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Games",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gardening",
+    "synonyms" : [ "garden" ]
+  }, {
+    "canonicalName" : "Garage Saleing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Genealogy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Geocaching",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Ghost Hunting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Glowsticking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gnoming",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Going to movies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Golf",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Go Kart Racing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Grip Strength",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Guitar",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gunsmithing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gun Collecting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gymnastics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gyotaku",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Handwriting Analysis",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hang gliding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Herping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hiking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Home Brewing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Home Repair",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Home Theater",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Horse riding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hot air ballooning",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hula Hooping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hunting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Iceskating",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Illusion",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Impersonations",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Internet",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Inventing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Jet Engines",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Jewelry Making",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Jigsaw Puzzles",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Juggling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Keep A Journal",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Jump Roping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Kayaking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Kitchen Chemistry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Kites",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Kite Boarding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Knitting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Knotting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Lasers",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Lawn Darts",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Learn to Play Poker",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Learning A Foreign Language",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Learning An Instrument",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Learning To Pilot A Plane",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Leathercrafting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Legos",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Letterboxing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Listening to music",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Locksport",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Lacrosse",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Macram�",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Magic",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Making Model Cars",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Marksmanship",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Matchstick Modeling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Meditation",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Microscopy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Metal Detecting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Model Railroading",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Model Rockets",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Modeling Ships",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Models",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Motorcycles",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Mountain Biking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Mountain Climbing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Musical Instruments",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Nail Art",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Needlepoint",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Antique Cars",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Painting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Paintball",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Papermaking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Papermache",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Parachuting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Paragliding or Power Paragliding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Parkour",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "People Watching",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Photography",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Piano",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pinochle",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pipe Smoking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Planking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Playing music",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Playing team sports",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pole Dancing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pottery",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Powerboking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Protesting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Puppetry",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pyrotechnics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Quilting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Racing Pigeons",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rafting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Railfans",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rapping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "R/C Cars",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "R/C Helicopters",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "R/C Planes",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Reading",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Reading To The Elderly",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Relaxing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Renaissance Faire",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Renting movies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rescuing Abused Or Abandoned Animals",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Robotics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rock Balancing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rock Collecting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rockets",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rocking AIDS Babies",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Roleplaying",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Saltwater Aquariums",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sand Castles",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Scrapbooking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Scuba Diving",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Self Defense",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sewing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Shark Fishing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Skeet Shooting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Skiing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Shopping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Singing In Choir",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Skateboarding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sketching",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Slack Lining",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sleeping",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Slingshots",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Slot Car Racing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Snorkeling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Snowboarding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Soap Making",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Socializing with friends/neighbors",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Speed Cubing (rubix cube)",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Spelunkering",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Spending time with family/kids",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Stamp Collecting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Storm Chasing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Storytelling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "String Figures",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Surfing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Surf Fishing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Survival",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Tea Tasting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Storytelling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Textiles",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Tutoring Children",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Travelling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Gaming",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Violin",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Volunteer",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Walking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Warhammer",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Watching sporting events",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Watching sports events",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Weightlifting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Windsurfing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Wine Making",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Wingsuit Flying",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Woodworking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Working in a charity",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Working on cars",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "World Record Breaking",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Wrestling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Writing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Writing Music",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Writing Songs",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Yoga",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Yoyo",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Ziplining",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Zumba",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "hockey",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sailing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sports",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Cycling",
+    "synonyms" : [ "Bicycling" ]
+  }, {
+    "canonicalName" : "Fitness",
+    "synonyms" : [ "keeping fit" ]
+  }, {
+    "canonicalName" : "Collect vintage clothing",
+    "synonyms" : [ "vintage clothing" ]
+  }, {
+    "canonicalName" : "Military history",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Collecting stamps",
+    "synonyms" : [ "collect stamps" ]
+  }, {
+    "canonicalName" : "Scouting",
+    "synonyms" : [ "scout" ]
+  }, {
+    "canonicalName" : "Watching movies",
+    "synonyms" : [ "movies" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Hobby" ]
+}

@@ -1,0 +1,139 @@
+{
+  "name" : "Language",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Arabic",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Chinese",
+    "synonyms" : [ "mandarin" ]
+  }, {
+    "canonicalName" : "Czech",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Dutch",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "French",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Greek",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hindi",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hungarian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Irish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Japanese",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Latvian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Maori",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Mongolian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Norwegian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Polish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Russian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Slovenian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Swedish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Thai",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Catalan",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Croatian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "English",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Estonian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Finnish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Georgian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "German",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hebrew",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Icelandic",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Indonesian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Italian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Javanese",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Kurdish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Lithuanian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Macedonian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Portuguese",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Romanian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Serbian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Turkish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Ukrainian",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Yiddish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Zulu",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Spanish",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Nordic Languages",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Korean",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

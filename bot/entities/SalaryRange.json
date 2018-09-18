@@ -1,0 +1,52 @@
+{
+  "name" : "SalaryRange",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "40K-60K",
+    "synonyms" : [ "40.000", "45.000", "50.000", "55.000", "40K", "45K", "50K", "55K", "40 K", "45 K", "50 K", "55 K", "40000", "45000", "50000", "55000", "40 thousand", "45 thousand", "50 thousand", "55 thousand" ]
+  }, {
+    "canonicalName" : "60K-80K",
+    "synonyms" : [ "60.000", "65.000", "70.000", "75.000", "60K", "65K", "70K", "75K", "60 K", "65 K", "70 K", "75 K", "60000", "65000", "70000", "75000", "60 thousand", "65 thousand", "70 thousand", "75 thousand" ]
+  }, {
+    "canonicalName" : "80K-100K",
+    "synonyms" : [ "80.000", "85.000", "90.000", "95.000", "80K", "85K", "90K", "95K", "80 K", "85 K", "90 K", "95 K", "80000", "85000", "90000", "95000", "80 thousand", "85 thousand", "90 thousand", "95 thousand" ]
+  }, {
+    "canonicalName" : "100K-120K",
+    "synonyms" : [ "100.000", "105.000", "110.000", "115.000", "100K", "105K", "110K", "115K", "100 K", "105 K", "110 K", "115 K", "100000", "105000", "110000", "115000", "100 thousand", "105 thousand", "110 thousand", "115 thousand" ]
+  }, {
+    "canonicalName" : "120K-140K",
+    "synonyms" : [ "120.000", "125.000", "130.000", "135.000", "120K", "125K", "130K", "135K", "120 K", "125 K", "130 K", "135 K", "120000", "125000", "130000", "135000", "120 thousand", "125 thousand", "130 thousand", "135 thousand" ]
+  }, {
+    "canonicalName" : "140K-160K",
+    "synonyms" : [ "140.000", "145.000", "150.000", "155.000", "140K", "145 K", "150 K", "155 K", "140 K", "145K", "150K", "155K", "140000", "145000", "150000", "155000", "140 thousand", "145 thousand", "150 thousand", "155 thousand" ]
+  }, {
+    "canonicalName" : "160K-180K",
+    "synonyms" : [ "160.000", "165.000", "170.000", "175.000", "160K", "165K", "170K", "175K", "160 K", "165 K", "170 K", "175 K", "160000", "165000", "170000", "175000", "160 thousand", "165 thousand", "170 thousand", "175 thousand" ]
+  }, {
+    "canonicalName" : "180K-200K",
+    "synonyms" : [ "180.000", "185.000", "190.000", "195.000", "180K", "185K", "190K", "195K", "180 K", "185 K", "190 K", "195 K", "180000", "185000", "190000", "195000", "180 thousand", "185 thousand", "190 thousand", "195 thousand" ]
+  }, {
+    "canonicalName" : "200K",
+    "synonyms" : [ "200.000", "200000", "200K", "200 K", "200 thousand" ]
+  }, {
+    "canonicalName" : "250K",
+    "synonyms" : [ "250.000", "250000", "250 K", "250 thousand" ]
+  }, {
+    "canonicalName" : "300K",
+    "synonyms" : [ "300.000", "300000", "300 K", "300 thousand" ]
+  }, {
+    "canonicalName" : "350K",
+    "synonyms" : [ "350.000 350000", "350 K", "350 thousand" ]
+  }, {
+    "canonicalName" : "400K",
+    "synonyms" : [ "400.000", "400000", "400 K", "400 thousand" ]
+  }, {
+    "canonicalName" : "450K",
+    "synonyms" : [ "450.000 450000", "450 K", "450 thousand" ]
+  }, {
+    "canonicalName" : "500K",
+    "synonyms" : [ "500.000", "500000", "500 K", "500 thousand" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity4", "What is your value for SalaryRange?" ]
+}

@@ -1,0 +1,10 @@
+{
+  "name" : "IndStudent",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "StudentYes",
+    "synonyms" : [ "just graduated", "studying", "finishing", "graduated last", "about to finish", "I am a student", "I am still a student" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity3" ]
+}

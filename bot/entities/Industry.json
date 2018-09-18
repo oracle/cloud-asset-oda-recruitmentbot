@@ -1,0 +1,91 @@
+{
+  "name" : "Industry",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Automotive",
+    "synonyms" : [ "EV", "auto" ]
+  }, {
+    "canonicalName" : "Communications",
+    "synonyms" : [ "telecommunications", "telco", "ISP", "comms" ]
+  }, {
+    "canonicalName" : "Consumer Goods",
+    "synonyms" : [ "Consumer Goods", "FMCG" ]
+  }, {
+    "canonicalName" : "Education",
+    "synonyms" : [ "Research" ]
+  }, {
+    "canonicalName" : "Financial Services",
+    "synonyms" : [ "Financials", "Banks", "Banking", "finance", "fintech" ]
+  }, {
+    "canonicalName" : "Healthcare",
+    "synonyms" : [ "Hospitals", "Hospital", "Medical", "health care" ]
+  }, {
+    "canonicalName" : "High Tech",
+    "synonyms" : [ "High technology", "high-tech", "hi-tech", "hitech", "tech", "technology" ]
+  }, {
+    "canonicalName" : "Industrial Manufacturing",
+    "synonyms" : [ "Manufacturing", "Industrial" ]
+  }, {
+    "canonicalName" : "Public Sector",
+    "synonyms" : [ "Public", "Govt", "Governement", "government" ]
+  }, {
+    "canonicalName" : "Retail",
+    "synonyms" : [ "High street", "Merchandising", "eCommerce" ]
+  }, {
+    "canonicalName" : "Information Technology",
+    "synonyms" : [ "IT", "ICT" ]
+  }, {
+    "canonicalName" : "Construction",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Airline",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Aerospace",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Agriculture",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Tobacco",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Chemical",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pharmaceutical",
+    "synonyms" : [ "pharma" ]
+  }, {
+    "canonicalName" : "Real estate",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Defense",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Energy",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Entertainment",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Media",
+    "synonyms" : [ "Film", "Publishing" ]
+  }, {
+    "canonicalName" : "Food",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Hospitality",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Electronics",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Military",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Transport",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1", "What is your value for Industry?" ]
+}

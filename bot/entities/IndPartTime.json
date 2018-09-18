@@ -1,0 +1,10 @@
+{
+  "name" : "IndPartTime",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "PartTimeYes",
+    "synonyms" : [ "parttime", "part-time", "2 days", "3 days", "4 days", "24 hour", "24 hours", "32 hour", "32 hours", "36 hour", "36 hours", "part time" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

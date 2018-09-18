@@ -1,0 +1,52 @@
+{
+  "name" : "JobDomain",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "AI & Bots",
+    "synonyms" : [ "Chatbots", "Intelligent Bots", "Artificial Intelligence", "Event Processing", "AI", "bots", "chatbot", "machine learning", "NLP", "ML" ]
+  }, {
+    "canonicalName" : "CX",
+    "synonyms" : [ "Service", "Field Service", "Policy Automation", "CPQ", "Scheduling", "Social Media", "Social", "E-commerce", "Commerce", "Sales performance" ]
+  }, {
+    "canonicalName" : "BI & Big Data",
+    "synonyms" : [ "Analytics", "BI", "Big Data", "Hadoop", "Data warehouses", "Business Intelligence", "Data visualization", "Essbase" ]
+  }, {
+    "canonicalName" : "HCM",
+    "synonyms" : [ "Talent Management", "Workforce Rewards", "Workforce Management", "Worklife Solutions", "HCM Analytics", "Human Resources", "HR" ]
+  }, {
+    "canonicalName" : "ERP",
+    "synonyms" : [ "Financials", "Revenue Management", "Accounting Hub", "Project Finanical Managemen", "Procurement", "Risk Management" ]
+  }, {
+    "canonicalName" : "Cloud Platform",
+    "synonyms" : [ "Database", "IaaS" ]
+  }, {
+    "canonicalName" : "SCM",
+    "synonyms" : [ "Supply Chain Management", "Inventory Management", "Logistics", "Maintenance", "Product Lifecycle Management", "Order Management", "Product Master Data Management", "Supply Chain Planning" ]
+  }, {
+    "canonicalName" : "EPM",
+    "synonyms" : [ "Enterprise Performance Management", "Account Reconcilliation", "Enterprise Data Management", "Enterprise Performance Reporting", "Enterprise Planning", "Financial consolidation", "Tax Reporting" ]
+  }, {
+    "canonicalName" : "IoT",
+    "synonyms" : [ "Internet of Things", "Asset Monitoring", "Production Monitoring", "Fleet Monitoring", "Connected Worker", "Connected Assets" ]
+  }, {
+    "canonicalName" : "Data Management",
+    "synonyms" : [ "Database", "MySQL", "NoSQL", "Data Hub" ]
+  }, {
+    "canonicalName" : "Application Development",
+    "synonyms" : [ "Java", "Container", "Visual Designer", "RAPD", "Blockchain", "JavaScript", "low code", "node" ]
+  }, {
+    "canonicalName" : "Integration",
+    "synonyms" : [ "SOA", "Middleware", "ELT", "ETL", "Data replication" ]
+  }, {
+    "canonicalName" : "Security",
+    "synonyms" : [ "CASB", "Identity", "Hacking", "Security Monitoring", "Compliance", "GDPR" ]
+  }, {
+    "canonicalName" : "Mobile",
+    "synonyms" : [ "mobile apps", "apps" ]
+  }, {
+    "canonicalName" : "Digital Experience",
+    "synonyms" : [ "Content", "Portal", "Portals" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter JobDomain" ]
+}

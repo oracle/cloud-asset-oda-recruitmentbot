@@ -1,0 +1,22 @@
+{
+  "name" : "JobCategory",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Sales",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Sales Management",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Marketing",
+    "synonyms" : [ "PR", "public relations" ]
+  }, {
+    "canonicalName" : "Online Marketing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Pre-sales",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter JobCategory" ]
+}

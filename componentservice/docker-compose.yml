@@ -1,0 +1,25 @@
+version: '2'
+services:
+  bots-service-recruitment-bot:
+    container_name: bots-service-recruitment-bot
+    image: bots-dev-generated:0.1.1
+    build: 
+      context: .
+      args:
+        # NOTE: 'obot compose up' will automatically detect proxy configurations.
+        - HTTP_PROXY=${HTTP_PROXY}
+    environment:
+      - HTTP_PROXY=${HTTP_PROXY}
+      - HTTPS_PROXY=${HTTPS_PROXY}
+      - NO_PROX${NO_PROXY}
+    ports:
+      # NOTE: multiple containers cannot run at the same time with the debug port mapped.
+      # You may decide to set a unique port (and update IDE debugger configs), or remove this line altogether
+      - "7951:7950"
+      - "7930:7929"
+    volumes:
+      - ./:/var/application
+    networks:
+      - default
+networks:
+  backend:

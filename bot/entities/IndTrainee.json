@@ -1,0 +1,10 @@
+{
+  "name" : "IndTrainee",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "trainee",
+    "synonyms" : [ "internship" ]
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

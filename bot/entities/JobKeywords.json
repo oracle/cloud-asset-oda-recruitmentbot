@@ -1,0 +1,70 @@
+{
+  "name" : "JobKeywords",
+  "type" : "ENUMVALUES",
+  "enumValues" : [ {
+    "canonicalName" : "Customer success",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Innovation",
+    "synonyms" : [ "innovative" ]
+  }, {
+    "canonicalName" : "Creativity",
+    "synonyms" : [ "creative" ]
+  }, {
+    "canonicalName" : "Technology",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Internship",
+    "synonyms" : [ "intern" ]
+  }, {
+    "canonicalName" : "Direct marketing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Lead generation",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "EMEA role",
+    "synonyms" : [ "EMEA" ]
+  }, {
+    "canonicalName" : "Digits marketing",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Rewarding",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Fulfilling",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Well paid",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "FTSE accounts",
+    "synonyms" : [ "FTSE" ]
+  }, {
+    "canonicalName" : "Job rotation",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Senior position",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "European role",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Presenting",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Team leader",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Travelling",
+    "synonyms" : [ "Travel" ]
+  }, {
+    "canonicalName" : "Cloud",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Training",
+    "synonyms" : null
+  } ],
+  "namedEntityRuleParams" : [ ],
+  "prompts" : [ "Please enter Entity1" ]
+}

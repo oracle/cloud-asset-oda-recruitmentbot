@@ -1,0 +1,8 @@
+{
+  "name" : "Web",
+  "enabled" : true,
+  "config" : {
+    "type" : "web"
+  },
+  "category" : "bot"
+}
