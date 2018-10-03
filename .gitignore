@@ -4,3 +4,4 @@ componentservice/package/
 componentservice/reports/
 componentservice/*.zip
 componentservice/.vscode
+web/
