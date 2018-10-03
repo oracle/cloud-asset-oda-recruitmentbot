@@ -41,9 +41,6 @@
     "canonicalName" : "Sports",
     "synonyms" : null
   }, {
-    "canonicalName" : "Age",
-    "synonyms" : null
-  }, {
     "canonicalName" : "GraduationYear",
     "synonyms" : null
   }, {
@@ -60,6 +57,9 @@
     "synonyms" : null
   }, {
     "canonicalName" : "IndTrainee",
+    "synonyms" : null
+  }, {
+    "canonicalName" : "Age",
     "synonyms" : null
   } ],
   "namedEntityRuleParams" : [ ],

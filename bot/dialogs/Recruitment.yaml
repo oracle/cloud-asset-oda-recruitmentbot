@@ -73,9 +73,10 @@ states:
           attachmentType: "image" 
           attachmentUrl: "https://4.bp.blogspot.com/-rNAojDzy5L4/VbUTdR1_ygI/AAAAAAAATD0/nW787POU4-A/s1600/oracle.png"
         - type: "text"  
-          text: "You can use me to find a job that matches your wishes, interests and qualifications. To find the best match, I will ask you a number of questions about yourself and the job you are looking for. The more information you provide, the better I can match you!"  
-        - type: "text"  
-          text: "If you are not looking for a sales or marketing job, or you prefer to see just a list of available jobs, I recommend you visit our career website."  
+          text: "You can use me to find a job that matches your wishes, interests and qualifications." 
+          #         text: "You can use me to find a job that matches your wishes, interests and qualifications. To find the best match, I will ask you a number of questions about yourself and the job you are looking for. The more information you provide, the better I can match you!"  
+ #       - type: "text"  
+ #         text: "If you are not looking for a sales or marketing job, or you prefer to see just a list of available jobs, I recommend you visit our career website."  
           actions: 
           - label: "Let's get started!"
             type: "postback"
@@ -361,9 +362,7 @@ states:
         Industry: ${allInfo.value.Industry?join(' or ')}
         Keywords: ${allInfo.value.JobKeywords?join(', ')}
         Salary Indication: ${(allInfo.value.Salary?size!=0)?then(allInfo.value.Salary?join('#')?upper_case?replace(' ','')?replace('K','.000')?replace('-','.000')?replace('#','-'),(iresult.value.entityMatches['CURRENCY']?has_content)?then(allInfo.value.CURRENCY.amount,""))}
-        Parttime: ${allInfo.value.IndPartTime?has_content?then("Yes","No")}
-        
-        Age: ${age.value!""}
+        Parttime: ${allInfo.value.IndPartTime?has_content?then("Yes","No")}        
         Civil State: ${allInfo.value.CivilState!""}
         Student: ${allInfo.value.IndStudent?has_content?then("Yes","No")}
         Employers: ${allInfo.value.Company?join(' and ')}
@@ -373,6 +372,7 @@ states:
         Languages: ${allInfo.value.Language?join(' and ')}
         Hobbies: ${allInfo.value.Pastime?join(' and ')}
         
+#        Age: ${age.value!""}
     transitions:
       return: "done"
   bye:
