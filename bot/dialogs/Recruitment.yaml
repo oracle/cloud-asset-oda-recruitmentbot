@@ -7,7 +7,7 @@ context:
     allInfo: "AllInfo"
     jobInput: "string"
     moreJobInput: "string"
-    allJobInput: "string"
+    allInput: "string"
     selfInput: "string"
     selfMoreInput: "string"
     allInput: "string"
@@ -28,7 +28,7 @@ states:
   reset:
     component: "System.ResetVariables"
     properties:
-      variableList: "allInfo,jobInput,moreJobInput,allJobInput,selfInput,selfMoreInput,allInput,retry,retrySelf,iresult,age,nextState,partTimeDone,yogaDone,  sportsDone,moreJobInfoProvided,moreSuffix,jobs"
+      variableList: "allInfo,jobInput,moreJobInput,allInput,selfInput,selfMoreInput,allInput,retry,retrySelf,iresult,age,nextState,partTimeDone,yogaDone,  sportsDone,moreJobInfoProvided,moreSuffix,jobs"
   # do clearBoarded for now, so we get welcome message every time, better for demos. Comment out this state if you want to see onboarding message only first time 
   clearBoarded:
     component: "System.SetVariable"
@@ -175,13 +175,13 @@ states:
   combineInput:
     component: "System.SetVariable"
     properties:
-      variable: "allJobInput"
+      variable: "allInput"
       # we prefix with zero, so when we initialize allInfo it always has a value because we added the NUMBER entity, so showProfile expressions do not crash
       value: "${('0 '+ jobInput.value?string + ' '+moreJobInput.value?string)}"
   matchMoreJobInput:
     component: "System.MatchEntity"
     properties:
-      sourceVariable: "moreJobInput"
+      sourceVariable: "allInput"
       variable: "allInfo"
     transitions:
       actions:
@@ -197,7 +197,7 @@ states:
     properties:
       keepTurn: true
 #      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain[0]+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry[0]+' area',''))}!"
-      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain[0]+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry[0]+' area',''))}!"
+      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain?join(' or ')+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry?join(' or ')+' area',''))}!"
     transitions: {}
   startJobHooks2:
     component: "System.SetVariable"
@@ -212,10 +212,16 @@ states:
       variable: "selfInput"
       prompt: "${((retrySelf.value!'true')=='true')?then('Can you tell a bit more about yourself?','I am sorry, I didnt get that, can you for example tell about your education and work experience?')} "
     transitions: {}    
+  # we concatenate all prior user inputs before we do MatchEntity again, otherwise we might loose some previously provided multi-value entity values (MatchEntity overrides the old value)   
+  combineInput2:
+    component: "System.SetVariable"
+    properties:
+      variable: "allInput"
+      value: "${allInput.value?string + ' '+selfInput.value?string}"
   matchSelfInput:
     component: "System.MatchEntity"
     properties:
-      sourceVariable: "selfInput"
+      sourceVariable: "allInput"
       variable: "allInfo"
     transitions:
       actions:
@@ -256,10 +262,15 @@ states:
       variable: "selfMoreInput"
       prompt: "Anything else you like to share about yourself that would help me find the best job for you?" 
     transitions: {}    
+  combineInput3:
+    component: "System.SetVariable"
+    properties:
+      variable: "allInput"
+      value: "${allInput.value?string + ' '+selfMoreInput.value?string}"
   matchMoreSelfInput:
     component: "System.MatchEntity"
     properties:
-      sourceVariable: "selfMoreInput"
+      sourceVariable: "allInput"
       variable: "allInfo"
     transitions:
       actions:
