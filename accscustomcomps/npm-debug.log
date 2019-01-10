@@ -1,0 +1,814 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/local/bin/node',
+1 verbose cli   '/usr/local/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   '--save',
+1 verbose cli   'node-shared-cache' ]
+2 info using npm@3.10.10
+3 info using node@v6.10.3
+4 silly loadCurrentTree Starting
+5 silly install loadCurrentTree
+6 silly install readLocalPackageData
+7 silly fetchPackageMetaData node-shared-cache
+8 silly fetchNamedPackageData node-shared-cache
+9 silly mapToRegistry name node-shared-cache
+10 silly mapToRegistry using default registry
+11 silly mapToRegistry registry https://registry.npmjs.org/
+12 silly mapToRegistry data Result {
+12 silly mapToRegistry   raw: 'node-shared-cache',
+12 silly mapToRegistry   scope: null,
+12 silly mapToRegistry   escapedName: 'node-shared-cache',
+12 silly mapToRegistry   name: 'node-shared-cache',
+12 silly mapToRegistry   rawSpec: '',
+12 silly mapToRegistry   spec: 'latest',
+12 silly mapToRegistry   type: 'tag' }
+13 silly mapToRegistry uri https://registry.npmjs.org/node-shared-cache
+14 verbose request uri https://registry.npmjs.org/node-shared-cache
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 2:27:08 AM
+17 verbose request id c84b53101a768da3
+18 verbose etag W/"58c5f635-4ae9"
+19 verbose lastModified Mon, 13 Mar 2017 01:30:29 GMT
+20 http request GET https://registry.npmjs.org/node-shared-cache
+21 http 304 https://registry.npmjs.org/node-shared-cache
+22 verbose headers { date: 'Thu, 21 Sep 2017 23:27:08 GMT',
+22 verbose headers   via: '1.1 varnish',
+22 verbose headers   'cache-control': 'max-age=300',
+22 verbose headers   etag: 'W/"58c5f635-4ae9"',
+22 verbose headers   age: '22',
+22 verbose headers   connection: 'keep-alive',
+22 verbose headers   'x-served-by': 'cache-fjr7920-FJR',
+22 verbose headers   'x-cache': 'HIT',
+22 verbose headers   'x-cache-hits': '1',
+22 verbose headers   'x-timer': 'S1506036429.798735,VS0,VE0',
+22 verbose headers   vary: 'Accept-Encoding, Accept' }
+23 silly get cb [ 304,
+23 silly get   { date: 'Thu, 21 Sep 2017 23:27:08 GMT',
+23 silly get     via: '1.1 varnish',
+23 silly get     'cache-control': 'max-age=300',
+23 silly get     etag: 'W/"58c5f635-4ae9"',
+23 silly get     age: '22',
+23 silly get     connection: 'keep-alive',
+23 silly get     'x-served-by': 'cache-fjr7920-FJR',
+23 silly get     'x-cache': 'HIT',
+23 silly get     'x-cache-hits': '1',
+23 silly get     'x-timer': 'S1506036429.798735,VS0,VE0',
+23 silly get     vary: 'Accept-Encoding, Accept' } ]
+24 verbose etag https://registry.npmjs.org/node-shared-cache from cache
+25 verbose get saving node-shared-cache to /Users/tqumhieh/.npm/registry.npmjs.org/node-shared-cache/.cache.json
+26 verbose correctMkdir /Users/tqumhieh/.npm correctMkdir not in flight; initializing
+27 silly install normalizeTree
+28 silly loadCurrentTree Finishing
+29 silly loadIdealTree Starting
+30 silly install loadIdealTree
+31 silly cloneCurrentTree Starting
+32 silly install cloneCurrentTreeToIdealTree
+33 silly cloneCurrentTree Finishing
+34 silly loadShrinkwrap Starting
+35 silly install loadShrinkwrap
+36 silly loadShrinkwrap Finishing
+37 silly loadAllDepsIntoIdealTree Starting
+38 silly install loadAllDepsIntoIdealTree
+39 silly resolveWithNewModule node-shared-cache@1.6.2 checking installable status
+40 silly cache add args [ 'node-shared-cache', null ]
+41 verbose cache add spec node-shared-cache
+42 silly cache add parsed spec Result {
+42 silly cache add   raw: 'node-shared-cache',
+42 silly cache add   scope: null,
+42 silly cache add   escapedName: 'node-shared-cache',
+42 silly cache add   name: 'node-shared-cache',
+42 silly cache add   rawSpec: '',
+42 silly cache add   spec: 'latest',
+42 silly cache add   type: 'tag' }
+43 silly addNamed node-shared-cache@latest
+44 verbose addNamed "latest" is being treated as a dist-tag for node-shared-cache
+45 info addNameTag [ 'node-shared-cache', 'latest' ]
+46 silly mapToRegistry name node-shared-cache
+47 silly mapToRegistry using default registry
+48 silly mapToRegistry registry https://registry.npmjs.org/
+49 silly mapToRegistry data Result {
+49 silly mapToRegistry   raw: 'node-shared-cache',
+49 silly mapToRegistry   scope: null,
+49 silly mapToRegistry   escapedName: 'node-shared-cache',
+49 silly mapToRegistry   name: 'node-shared-cache',
+49 silly mapToRegistry   rawSpec: '',
+49 silly mapToRegistry   spec: 'latest',
+49 silly mapToRegistry   type: 'tag' }
+50 silly mapToRegistry uri https://registry.npmjs.org/node-shared-cache
+51 verbose addNameTag registry:https://registry.npmjs.org/node-shared-cache not in flight; fetching
+52 verbose get https://registry.npmjs.org/node-shared-cache not expired, no request
+53 silly addNameTag next cb for node-shared-cache with tag latest
+54 silly addNamed node-shared-cache@1.6.2
+55 verbose addNamed "1.6.2" is a plain semver version for node-shared-cache
+56 silly cache afterAdd node-shared-cache@1.6.2
+57 verbose afterAdd /Users/tqumhieh/.npm/node-shared-cache/1.6.2/package/package.json not in flight; writing
+58 verbose correctMkdir /Users/tqumhieh/.npm correctMkdir not in flight; initializing
+59 verbose afterAdd /Users/tqumhieh/.npm/node-shared-cache/1.6.2/package/package.json written
+60 silly fetchNamedPackageData nan
+61 silly mapToRegistry name nan
+62 silly mapToRegistry using default registry
+63 silly mapToRegistry registry https://registry.npmjs.org/
+64 silly mapToRegistry data Result {
+64 silly mapToRegistry   raw: 'nan',
+64 silly mapToRegistry   scope: null,
+64 silly mapToRegistry   escapedName: 'nan',
+64 silly mapToRegistry   name: 'nan',
+64 silly mapToRegistry   rawSpec: '',
+64 silly mapToRegistry   spec: 'latest',
+64 silly mapToRegistry   type: 'tag' }
+65 silly mapToRegistry uri https://registry.npmjs.org/nan
+66 verbose request uri https://registry.npmjs.org/nan
+67 verbose request no auth needed
+68 info attempt registry request try #1 at 2:27:08 AM
+69 verbose etag W/"59c33594-20237"
+70 verbose lastModified Thu, 21 Sep 2017 03:44:20 GMT
+71 http request GET https://registry.npmjs.org/nan
+72 http 304 https://registry.npmjs.org/nan
+73 verbose headers { date: 'Thu, 21 Sep 2017 23:27:09 GMT',
+73 verbose headers   via: '1.1 varnish',
+73 verbose headers   'cache-control': 'max-age=300',
+73 verbose headers   etag: 'W/"59c33594-20237"',
+73 verbose headers   age: '21',
+73 verbose headers   connection: 'keep-alive',
+73 verbose headers   'x-served-by': 'cache-fjr7920-FJR',
+73 verbose headers   'x-cache': 'HIT',
+73 verbose headers   'x-cache-hits': '2',
+73 verbose headers   'x-timer': 'S1506036429.001093,VS0,VE0',
+73 verbose headers   vary: 'Accept-Encoding, Accept' }
+74 silly get cb [ 304,
+74 silly get   { date: 'Thu, 21 Sep 2017 23:27:09 GMT',
+74 silly get     via: '1.1 varnish',
+74 silly get     'cache-control': 'max-age=300',
+74 silly get     etag: 'W/"59c33594-20237"',
+74 silly get     age: '21',
+74 silly get     connection: 'keep-alive',
+74 silly get     'x-served-by': 'cache-fjr7920-FJR',
+74 silly get     'x-cache': 'HIT',
+74 silly get     'x-cache-hits': '2',
+74 silly get     'x-timer': 'S1506036429.001093,VS0,VE0',
+74 silly get     vary: 'Accept-Encoding, Accept' } ]
+75 verbose etag https://registry.npmjs.org/nan from cache
+76 verbose get saving nan to /Users/tqumhieh/.npm/registry.npmjs.org/nan/.cache.json
+77 verbose correctMkdir /Users/tqumhieh/.npm correctMkdir not in flight; initializing
+78 silly resolveWithNewModule nan@2.4.0 checking installable status
+79 silly cache add args [ 'nan@~2.4.0', null ]
+80 verbose cache add spec nan@~2.4.0
+81 silly cache add parsed spec Result {
+81 silly cache add   raw: 'nan@~2.4.0',
+81 silly cache add   scope: null,
+81 silly cache add   escapedName: 'nan',
+81 silly cache add   name: 'nan',
+81 silly cache add   rawSpec: '~2.4.0',
+81 silly cache add   spec: '>=2.4.0 <2.5.0',
+81 silly cache add   type: 'range' }
+82 silly addNamed nan@>=2.4.0 <2.5.0
+83 verbose addNamed ">=2.4.0 <2.5.0" is a valid semver range for nan
+84 silly addNameRange { name: 'nan', range: '>=2.4.0 <2.5.0', hasData: false }
+85 silly mapToRegistry name nan
+86 silly mapToRegistry using default registry
+87 silly mapToRegistry registry https://registry.npmjs.org/
+88 silly mapToRegistry data Result {
+88 silly mapToRegistry   raw: 'nan',
+88 silly mapToRegistry   scope: null,
+88 silly mapToRegistry   escapedName: 'nan',
+88 silly mapToRegistry   name: 'nan',
+88 silly mapToRegistry   rawSpec: '',
+88 silly mapToRegistry   spec: 'latest',
+88 silly mapToRegistry   type: 'tag' }
+89 silly mapToRegistry uri https://registry.npmjs.org/nan
+90 verbose addNameRange registry:https://registry.npmjs.org/nan not in flight; fetching
+91 verbose get https://registry.npmjs.org/nan not expired, no request
+92 silly addNameRange number 2 { name: 'nan', range: '>=2.4.0 <2.5.0', hasData: true }
+93 silly addNameRange versions [ 'nan',
+93 silly addNameRange   [ '0.3.0-wip',
+93 silly addNameRange     '0.3.0-wip2',
+93 silly addNameRange     '0.3.0',
+93 silly addNameRange     '0.3.1',
+93 silly addNameRange     '0.3.2',
+93 silly addNameRange     '0.4.0',
+93 silly addNameRange     '0.4.1',
+93 silly addNameRange     '0.4.2',
+93 silly addNameRange     '0.4.3',
+93 silly addNameRange     '0.4.4',
+93 silly addNameRange     '0.5.0',
+93 silly addNameRange     '0.5.1',
+93 silly addNameRange     '0.5.2',
+93 silly addNameRange     '0.6.0',
+93 silly addNameRange     '0.7.0',
+93 silly addNameRange     '0.7.1',
+93 silly addNameRange     '0.8.0',
+93 silly addNameRange     '1.0.0',
+93 silly addNameRange     '1.1.0',
+93 silly addNameRange     '1.1.1',
+93 silly addNameRange     '1.1.2',
+93 silly addNameRange     '1.2.0',
+93 silly addNameRange     '1.3.0',
+93 silly addNameRange     '1.4.0',
+93 silly addNameRange     '1.4.1',
+93 silly addNameRange     '1.5.0',
+93 silly addNameRange     '1.4.2',
+93 silly addNameRange     '1.4.3',
+93 silly addNameRange     '1.5.1',
+93 silly addNameRange     '1.5.2',
+93 silly addNameRange     '1.6.0',
+93 silly addNameRange     '1.5.3',
+93 silly addNameRange     '1.6.1',
+93 silly addNameRange     '1.6.2',
+93 silly addNameRange     '1.7.0',
+93 silly addNameRange     '1.8.0',
+93 silly addNameRange     '1.8.1',
+93 silly addNameRange     '1.8.2',
+93 silly addNameRange     '1.8.3',
+93 silly addNameRange     '1.8.4',
+93 silly addNameRange     '1.9.0',
+93 silly addNameRange     '2.0.0',
+93 silly addNameRange     '2.0.1',
+93 silly addNameRange     '2.0.2',
+93 silly addNameRange     '2.0.3',
+93 silly addNameRange     '2.0.4',
+93 silly addNameRange     '2.0.5',
+93 silly addNameRange     '2.0.6',
+93 silly addNameRange     '2.0.7',
+93 silly addNameRange     '2.0.8',
+93 silly addNameRange     '2.0.9',
+93 silly addNameRange     '2.1.0',
+93 silly addNameRange     '2.2.0',
+93 silly addNameRange     '2.2.1',
+93 silly addNameRange     '2.3.0',
+93 silly addNameRange     '2.3.1',
+93 silly addNameRange     '2.3.2',
+93 silly addNameRange     '2.3.3',
+93 silly addNameRange     '2.3.4',
+93 silly addNameRange     '2.3.5',
+93 silly addNameRange     '2.4.0',
+93 silly addNameRange     '2.5.0',
+93 silly addNameRange     '2.5.1',
+93 silly addNameRange     '2.6.0',
+93 silly addNameRange     '2.6.1',
+93 silly addNameRange     '2.6.2',
+93 silly addNameRange     '2.7.0' ] ]
+94 silly addNamed nan@2.4.0
+95 verbose addNamed "2.4.0" is a plain semver version for nan
+96 silly cache afterAdd nan@2.4.0
+97 verbose afterAdd /Users/tqumhieh/.npm/nan/2.4.0/package/package.json not in flight; writing
+98 verbose correctMkdir /Users/tqumhieh/.npm correctMkdir not in flight; initializing
+99 verbose afterAdd /Users/tqumhieh/.npm/nan/2.4.0/package/package.json written
+100 silly loadAllDepsIntoIdealTree Finishing
+101 silly loadIdealTree Finishing
+102 silly currentTree ateam-dev-bots-base@0.6.1
+102 silly currentTree ├── accepts@1.3.3
+102 silly currentTree ├── ajv@5.2.2
+102 silly currentTree ├── apache-crypt@1.2.1
+102 silly currentTree ├── apache-md5@1.1.2
+102 silly currentTree ├── array-flatten@1.1.1
+102 silly currentTree ├── asn1@0.2.3
+102 silly currentTree ├── assert-plus@1.0.0
+102 silly currentTree ├── asynckit@0.4.0
+102 silly currentTree ├── aws-sign2@0.7.0
+102 silly currentTree ├── aws4@1.6.0
+102 silly currentTree ├── basic-auth@1.1.0
+102 silly currentTree ├── bcrypt-pbkdf@1.0.1
+102 silly currentTree ├── bcryptjs@2.4.3
+102 silly currentTree ├── bluebird@3.5.0
+102 silly currentTree ├── body-parser@1.17.2
+102 silly currentTree ├── boom@4.3.1
+102 silly currentTree ├── bytes@2.4.0
+102 silly currentTree ├── caseless@0.12.0
+102 silly currentTree ├── co@4.6.0
+102 silly currentTree ├── combined-stream@1.0.5
+102 silly currentTree ├── compress@0.99.0
+102 silly currentTree ├─┬ concat-stream@1.6.0
+102 silly currentTree │ ├── isarray@1.0.0
+102 silly currentTree │ ├── readable-stream@2.3.3
+102 silly currentTree │ └── string_decoder@1.0.3
+102 silly currentTree ├── content-disposition@0.5.2
+102 silly currentTree ├── content-type@1.0.2
+102 silly currentTree ├── cookie-signature@1.0.6
+102 silly currentTree ├── cookie@0.3.1
+102 silly currentTree ├── core-util-is@1.0.2
+102 silly currentTree ├─┬ cryptiles@3.1.2
+102 silly currentTree │ └── boom@5.2.0
+102 silly currentTree ├── dashdash@1.14.1
+102 silly currentTree ├── date-format@0.0.0
+102 silly currentTree ├── dateformat@3.0.2
+102 silly currentTree ├── debug@2.6.7
+102 silly currentTree ├── delayed-stream@1.0.0
+102 silly currentTree ├── depd@1.1.1
+102 silly currentTree ├── destroy@1.0.4
+102 silly currentTree ├── ecc-jsbn@0.1.1
+102 silly currentTree ├── ee-first@1.1.1
+102 silly currentTree ├── ejs@2.5.7
+102 silly currentTree ├── encodeurl@1.0.1
+102 silly currentTree ├── escape-html@1.0.3
+102 silly currentTree ├── etag@1.8.0
+102 silly currentTree ├─┬ express@4.15.4
+102 silly currentTree │ ├── debug@2.6.8
+102 silly currentTree │ └── qs@6.5.0
+102 silly currentTree ├── extend@3.0.1
+102 silly currentTree ├── extsprintf@1.3.0
+102 silly currentTree ├── fast-deep-equal@1.0.0
+102 silly currentTree ├─┬ finalhandler@1.0.4
+102 silly currentTree │ └── debug@2.6.8
+102 silly currentTree ├── first-chunk-stream@0.1.0
+102 silly currentTree ├── forever-agent@0.6.1
+102 silly currentTree ├── form-data@2.3.1
+102 silly currentTree ├── forwarded@0.1.0
+102 silly currentTree ├── fresh@0.5.0
+102 silly currentTree ├── getpass@0.1.7
+102 silly currentTree ├── har-schema@2.0.0
+102 silly currentTree ├── har-validator@5.0.3
+102 silly currentTree ├── hawk@6.0.2
+102 silly currentTree ├── hoek@4.2.0
+102 silly currentTree ├── http-auth@3.2.3
+102 silly currentTree ├── http-errors@1.6.2
+102 silly currentTree ├── http-signature@1.2.0
+102 silly currentTree ├── iconv-lite@0.4.15
+102 silly currentTree ├── inherits@2.0.3
+102 silly currentTree ├── ipaddr.js@1.4.0
+102 silly currentTree ├── is-absolute@0.2.6
+102 silly currentTree ├── is-relative@0.2.1
+102 silly currentTree ├── is-typedarray@1.0.0
+102 silly currentTree ├── is-unc-path@0.1.2
+102 silly currentTree ├── is-utf8@0.2.1
+102 silly currentTree ├── is-windows@0.2.0
+102 silly currentTree ├── isarray@0.0.1
+102 silly currentTree ├── isemail@2.2.1
+102 silly currentTree ├── isstream@0.1.2
+102 silly currentTree ├── items@2.1.1
+102 silly currentTree ├── joi@10.6.0
+102 silly currentTree ├── jsbn@0.1.1
+102 silly currentTree ├── json-schema-traverse@0.3.1
+102 silly currentTree ├── json-schema@0.2.3
+102 silly currentTree ├── json-stable-stringify@1.0.1
+102 silly currentTree ├── json-stringify-safe@5.0.1
+102 silly currentTree ├── jsonify@0.0.0
+102 silly currentTree ├── jsprim@1.4.1
+102 silly currentTree ├── lodash@3.10.1
+102 silly currentTree ├── log4js@1.1.1
+102 silly currentTree ├── media-typer@0.3.0
+102 silly currentTree ├── merge-descriptors@1.0.1
+102 silly currentTree ├── methods@1.1.2
+102 silly currentTree ├── mime-db@1.29.0
+102 silly currentTree ├── mime-types@2.1.16
+102 silly currentTree ├── mime@1.3.4
+102 silly currentTree ├── minimist@0.0.8
+102 silly currentTree ├── mkdirp@0.5.1
+102 silly currentTree ├── moment@2.18.1
+102 silly currentTree ├─┬ morgan@1.8.2
+102 silly currentTree │ └── debug@2.6.8
+102 silly currentTree ├── ms@2.0.0
+102 silly currentTree ├── negotiator@0.6.1
+102 silly currentTree ├── node-persist@2.1.0
+102 silly currentTree ├── oauth-sign@0.8.2
+102 silly currentTree ├── on-finished@2.3.0
+102 silly currentTree ├── on-headers@1.0.1
+102 silly currentTree ├── parseurl@1.3.1
+102 silly currentTree ├── path-to-regexp@0.1.7
+102 silly currentTree ├── performance-now@2.1.0
+102 silly currentTree ├── process-nextick-args@1.0.7
+102 silly currentTree ├── proxy-addr@1.1.5
+102 silly currentTree ├── punycode@1.4.1
+102 silly currentTree ├── q@1.1.2
+102 silly currentTree ├── qs@6.4.0
+102 silly currentTree ├── range-parser@1.2.0
+102 silly currentTree ├── raw-body@2.2.0
+102 silly currentTree ├── readable-stream@1.1.14
+102 silly currentTree ├─┬ request@2.82.0
+102 silly currentTree │ ├── mime-db@1.30.0
+102 silly currentTree │ ├── mime-types@2.1.17
+102 silly currentTree │ └── qs@6.5.1
+102 silly currentTree ├── safe-buffer@5.1.1
+102 silly currentTree ├── sax@1.2.4
+102 silly currentTree ├── selectn@0.9.6
+102 silly currentTree ├── semver@5.4.1
+102 silly currentTree ├─┬ send@0.15.4
+102 silly currentTree │ └── debug@2.6.8
+102 silly currentTree ├── serve-static@1.12.4
+102 silly currentTree ├── setprototypeof@1.0.3
+102 silly currentTree ├── sntp@2.0.2
+102 silly currentTree ├─┬ soap@0.21.0
+102 silly currentTree │ └── debug@0.7.4
+102 silly currentTree ├── sshpk@1.13.1
+102 silly currentTree ├── statuses@1.3.1
+102 silly currentTree ├─┬ streamroller@0.4.1
+102 silly currentTree │ └── debug@0.7.4
+102 silly currentTree ├── string_decoder@0.10.31
+102 silly currentTree ├── stringstream@0.0.5
+102 silly currentTree ├── strip-bom@0.3.1
+102 silly currentTree ├── topo@2.0.2
+102 silly currentTree ├── tough-cookie@2.3.2
+102 silly currentTree ├── tunnel-agent@0.6.0
+102 silly currentTree ├── tweetnacl@0.14.5
+102 silly currentTree ├── type-is@1.6.15
+102 silly currentTree ├── typedarray@0.0.6
+102 silly currentTree ├── unc-path-regex@0.1.2
+102 silly currentTree ├── underscore@1.8.3
+102 silly currentTree ├── unix-crypt-td-js@1.0.0
+102 silly currentTree ├── unpipe@1.0.0
+102 silly currentTree ├── util-deprecate@1.0.2
+102 silly currentTree ├── utils-merge@1.0.0
+102 silly currentTree ├── uuid@3.1.0
+102 silly currentTree ├── vary@1.1.1
+102 silly currentTree ├── verror@1.10.0
+102 silly currentTree ├── xml-crypto@0.8.5
+102 silly currentTree ├── xml2js@0.4.19
+102 silly currentTree ├── xmlbuilder@9.0.4
+102 silly currentTree ├── xmldom@0.1.19
+102 silly currentTree └── xpath.js@1.0.7
+103 silly idealTree ateam-dev-bots-base@0.6.1
+103 silly idealTree ├── accepts@1.3.3
+103 silly idealTree ├── ajv@5.2.2
+103 silly idealTree ├── apache-crypt@1.2.1
+103 silly idealTree ├── apache-md5@1.1.2
+103 silly idealTree ├── array-flatten@1.1.1
+103 silly idealTree ├── asn1@0.2.3
+103 silly idealTree ├── assert-plus@1.0.0
+103 silly idealTree ├── asynckit@0.4.0
+103 silly idealTree ├── aws-sign2@0.7.0
+103 silly idealTree ├── aws4@1.6.0
+103 silly idealTree ├── basic-auth@1.1.0
+103 silly idealTree ├── bcrypt-pbkdf@1.0.1
+103 silly idealTree ├── bcryptjs@2.4.3
+103 silly idealTree ├── bluebird@3.5.0
+103 silly idealTree ├── body-parser@1.17.2
+103 silly idealTree ├── boom@4.3.1
+103 silly idealTree ├── bytes@2.4.0
+103 silly idealTree ├── caseless@0.12.0
+103 silly idealTree ├── co@4.6.0
+103 silly idealTree ├── combined-stream@1.0.5
+103 silly idealTree ├── compress@0.99.0
+103 silly idealTree ├─┬ concat-stream@1.6.0
+103 silly idealTree │ ├── isarray@1.0.0
+103 silly idealTree │ ├── readable-stream@2.3.3
+103 silly idealTree │ └── string_decoder@1.0.3
+103 silly idealTree ├── content-disposition@0.5.2
+103 silly idealTree ├── content-type@1.0.2
+103 silly idealTree ├── cookie-signature@1.0.6
+103 silly idealTree ├── cookie@0.3.1
+103 silly idealTree ├── core-util-is@1.0.2
+103 silly idealTree ├─┬ cryptiles@3.1.2
+103 silly idealTree │ └── boom@5.2.0
+103 silly idealTree ├── dashdash@1.14.1
+103 silly idealTree ├── date-format@0.0.0
+103 silly idealTree ├── dateformat@3.0.2
+103 silly idealTree ├── debug@2.6.7
+103 silly idealTree ├── delayed-stream@1.0.0
+103 silly idealTree ├── depd@1.1.1
+103 silly idealTree ├── destroy@1.0.4
+103 silly idealTree ├── ecc-jsbn@0.1.1
+103 silly idealTree ├── ee-first@1.1.1
+103 silly idealTree ├── ejs@2.5.7
+103 silly idealTree ├── encodeurl@1.0.1
+103 silly idealTree ├── escape-html@1.0.3
+103 silly idealTree ├── etag@1.8.0
+103 silly idealTree ├─┬ express@4.15.4
+103 silly idealTree │ ├── debug@2.6.8
+103 silly idealTree │ └── qs@6.5.0
+103 silly idealTree ├── extend@3.0.1
+103 silly idealTree ├── extsprintf@1.3.0
+103 silly idealTree ├── fast-deep-equal@1.0.0
+103 silly idealTree ├─┬ finalhandler@1.0.4
+103 silly idealTree │ └── debug@2.6.8
+103 silly idealTree ├── first-chunk-stream@0.1.0
+103 silly idealTree ├── forever-agent@0.6.1
+103 silly idealTree ├── form-data@2.3.1
+103 silly idealTree ├── forwarded@0.1.0
+103 silly idealTree ├── fresh@0.5.0
+103 silly idealTree ├── getpass@0.1.7
+103 silly idealTree ├── har-schema@2.0.0
+103 silly idealTree ├── har-validator@5.0.3
+103 silly idealTree ├── hawk@6.0.2
+103 silly idealTree ├── hoek@4.2.0
+103 silly idealTree ├── http-auth@3.2.3
+103 silly idealTree ├── http-errors@1.6.2
+103 silly idealTree ├── http-signature@1.2.0
+103 silly idealTree ├── iconv-lite@0.4.15
+103 silly idealTree ├── inherits@2.0.3
+103 silly idealTree ├── ipaddr.js@1.4.0
+103 silly idealTree ├── is-absolute@0.2.6
+103 silly idealTree ├── is-relative@0.2.1
+103 silly idealTree ├── is-typedarray@1.0.0
+103 silly idealTree ├── is-unc-path@0.1.2
+103 silly idealTree ├── is-utf8@0.2.1
+103 silly idealTree ├── is-windows@0.2.0
+103 silly idealTree ├── isarray@0.0.1
+103 silly idealTree ├── isemail@2.2.1
+103 silly idealTree ├── isstream@0.1.2
+103 silly idealTree ├── items@2.1.1
+103 silly idealTree ├── joi@10.6.0
+103 silly idealTree ├── jsbn@0.1.1
+103 silly idealTree ├── json-schema-traverse@0.3.1
+103 silly idealTree ├── json-schema@0.2.3
+103 silly idealTree ├── json-stable-stringify@1.0.1
+103 silly idealTree ├── json-stringify-safe@5.0.1
+103 silly idealTree ├── jsonify@0.0.0
+103 silly idealTree ├── jsprim@1.4.1
+103 silly idealTree ├── lodash@3.10.1
+103 silly idealTree ├── log4js@1.1.1
+103 silly idealTree ├── media-typer@0.3.0
+103 silly idealTree ├── merge-descriptors@1.0.1
+103 silly idealTree ├── methods@1.1.2
+103 silly idealTree ├── mime-db@1.29.0
+103 silly idealTree ├── mime-types@2.1.16
+103 silly idealTree ├── mime@1.3.4
+103 silly idealTree ├── minimist@0.0.8
+103 silly idealTree ├── mkdirp@0.5.1
+103 silly idealTree ├── moment@2.18.1
+103 silly idealTree ├─┬ morgan@1.8.2
+103 silly idealTree │ └── debug@2.6.8
+103 silly idealTree ├── ms@2.0.0
+103 silly idealTree ├── nan@2.4.0
+103 silly idealTree ├── negotiator@0.6.1
+103 silly idealTree ├── node-persist@2.1.0
+103 silly idealTree ├── node-shared-cache@1.6.2
+103 silly idealTree ├── oauth-sign@0.8.2
+103 silly idealTree ├── on-finished@2.3.0
+103 silly idealTree ├── on-headers@1.0.1
+103 silly idealTree ├── parseurl@1.3.1
+103 silly idealTree ├── path-to-regexp@0.1.7
+103 silly idealTree ├── performance-now@2.1.0
+103 silly idealTree ├── process-nextick-args@1.0.7
+103 silly idealTree ├── proxy-addr@1.1.5
+103 silly idealTree ├── punycode@1.4.1
+103 silly idealTree ├── q@1.1.2
+103 silly idealTree ├── qs@6.4.0
+103 silly idealTree ├── range-parser@1.2.0
+103 silly idealTree ├── raw-body@2.2.0
+103 silly idealTree ├── readable-stream@1.1.14
+103 silly idealTree ├─┬ request@2.82.0
+103 silly idealTree │ ├── mime-db@1.30.0
+103 silly idealTree │ ├── mime-types@2.1.17
+103 silly idealTree │ └── qs@6.5.1
+103 silly idealTree ├── safe-buffer@5.1.1
+103 silly idealTree ├── sax@1.2.4
+103 silly idealTree ├── selectn@0.9.6
+103 silly idealTree ├── semver@5.4.1
+103 silly idealTree ├─┬ send@0.15.4
+103 silly idealTree │ └── debug@2.6.8
+103 silly idealTree ├── serve-static@1.12.4
+103 silly idealTree ├── setprototypeof@1.0.3
+103 silly idealTree ├── sntp@2.0.2
+103 silly idealTree ├─┬ soap@0.21.0
+103 silly idealTree │ └── debug@0.7.4
+103 silly idealTree ├── sshpk@1.13.1
+103 silly idealTree ├── statuses@1.3.1
+103 silly idealTree ├─┬ streamroller@0.4.1
+103 silly idealTree │ └── debug@0.7.4
+103 silly idealTree ├── string_decoder@0.10.31
+103 silly idealTree ├── stringstream@0.0.5
+103 silly idealTree ├── strip-bom@0.3.1
+103 silly idealTree ├── topo@2.0.2
+103 silly idealTree ├── tough-cookie@2.3.2
+103 silly idealTree ├── tunnel-agent@0.6.0
+103 silly idealTree ├── tweetnacl@0.14.5
+103 silly idealTree ├── type-is@1.6.15
+103 silly idealTree ├── typedarray@0.0.6
+103 silly idealTree ├── unc-path-regex@0.1.2
+103 silly idealTree ├── underscore@1.8.3
+103 silly idealTree ├── unix-crypt-td-js@1.0.0
+103 silly idealTree ├── unpipe@1.0.0
+103 silly idealTree ├── util-deprecate@1.0.2
+103 silly idealTree ├── utils-merge@1.0.0
+103 silly idealTree ├── uuid@3.1.0
+103 silly idealTree ├── vary@1.1.1
+103 silly idealTree ├── verror@1.10.0
+103 silly idealTree ├── xml-crypto@0.8.5
+103 silly idealTree ├── xml2js@0.4.19
+103 silly idealTree ├── xmlbuilder@9.0.4
+103 silly idealTree ├── xmldom@0.1.19
+103 silly idealTree └── xpath.js@1.0.7
+104 silly generateActionsToTake Starting
+105 silly install generateActionsToTake
+106 silly generateActionsToTake Finishing
+107 silly diffTrees action count 2
+108 silly diffTrees add nan@2.4.0
+109 silly diffTrees add node-shared-cache@1.6.2
+110 silly decomposeActions action count 16
+111 silly decomposeActions fetch nan@2.4.0
+112 silly decomposeActions extract nan@2.4.0
+113 silly decomposeActions test nan@2.4.0
+114 silly decomposeActions preinstall nan@2.4.0
+115 silly decomposeActions build nan@2.4.0
+116 silly decomposeActions install nan@2.4.0
+117 silly decomposeActions postinstall nan@2.4.0
+118 silly decomposeActions finalize nan@2.4.0
+119 silly decomposeActions fetch node-shared-cache@1.6.2
+120 silly decomposeActions extract node-shared-cache@1.6.2
+121 silly decomposeActions test node-shared-cache@1.6.2
+122 silly decomposeActions preinstall node-shared-cache@1.6.2
+123 silly decomposeActions build node-shared-cache@1.6.2
+124 silly decomposeActions install node-shared-cache@1.6.2
+125 silly decomposeActions postinstall node-shared-cache@1.6.2
+126 silly decomposeActions finalize node-shared-cache@1.6.2
+127 silly runTopLevelLifecycles Starting
+128 silly executeActions Starting
+129 silly install executeActions
+130 silly doSerial global-install 0
+131 silly doParallel fetch 2
+132 verbose correctMkdir /Users/tqumhieh/.npm/_locks correctMkdir not in flight; initializing
+133 verbose lock using /Users/tqumhieh/.npm/_locks/staging-8395d4056d30f195.lock for /Users/tqumhieh/bots_dev/components/node_modules/.staging
+134 silly doParallel extract 2
+135 silly extract nan@2.4.0
+136 silly extract node-shared-cache@1.6.2
+137 verbose unbuild node_modules/.staging/nan-80658558
+138 silly gentlyRm /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558 is being purged from base /Users/tqumhieh/bots_dev/components
+139 verbose gentlyRm don't care about contents; nuking /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558
+140 verbose unbuild node_modules/.staging/node-shared-cache-cc8dc116
+141 verbose tar unpack /Users/tqumhieh/.npm/nan/2.4.0/package.tgz
+142 verbose tar unpacking to /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558
+143 silly gentlyRm /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558 is being purged
+144 verbose gentlyRm don't care about contents; nuking /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558
+145 silly gunzTarPerm modes [ '755', '644' ]
+146 silly gentlyRm /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116 is being purged from base /Users/tqumhieh/bots_dev/components
+147 verbose gentlyRm don't care about contents; nuking /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116
+148 verbose tar unpack /Users/tqumhieh/.npm/node-shared-cache/1.6.2/package.tgz
+149 verbose tar unpacking to /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116
+150 silly gentlyRm /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116 is being purged
+151 verbose gentlyRm don't care about contents; nuking /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116
+152 silly gunzTarPerm modes [ '755', '644' ]
+153 silly gunzTarPerm extractEntry package.json
+154 silly gunzTarPerm modified mode [ 'package.json', 436, 420 ]
+155 silly gunzTarPerm extractEntry package.json
+156 silly gunzTarPerm extractEntry README.md
+157 silly gunzTarPerm modified mode [ 'README.md', 436, 420 ]
+158 silly gunzTarPerm extractEntry include_dirs.js
+159 silly gunzTarPerm modified mode [ 'include_dirs.js', 436, 420 ]
+160 silly gunzTarPerm extractEntry .npmignore
+161 silly gunzTarPerm extractEntry README.md
+162 silly gunzTarPerm extractEntry nan_callbacks_pre_12_inl.h
+163 silly gunzTarPerm modified mode [ 'nan_callbacks_pre_12_inl.h', 436, 420 ]
+164 silly gunzTarPerm extractEntry CHANGELOG.md
+165 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 436, 420 ]
+166 silly gunzTarPerm extractEntry LICENSE.md
+167 silly gunzTarPerm modified mode [ 'LICENSE.md', 436, 420 ]
+168 silly gunzTarPerm extractEntry index.js
+169 silly gunzTarPerm extractEntry .idea/jsLibraryMappings.xml
+170 silly gunzTarPerm extractEntry doc/node_misc.md
+171 silly gunzTarPerm modified mode [ 'doc/node_misc.md', 436, 420 ]
+172 silly gunzTarPerm extractEntry .idea/misc.xml
+173 silly gunzTarPerm extractEntry .idea/modules.xml
+174 silly gunzTarPerm extractEntry .idea/node-shared-cache.iml
+175 silly gunzTarPerm extractEntry .idea/vcs.xml
+176 silly gunzTarPerm extractEntry .idea/watcherTasks.xml
+177 silly gunzTarPerm extractEntry .idea/workspace.xml
+178 silly gunzTarPerm extractEntry src/binding.cc
+179 silly gunzTarPerm extractEntry src/bson.cc
+180 silly gunzTarPerm extractEntry src/bson.h
+181 silly gunzTarPerm extractEntry src/lock.h
+182 silly gunzTarPerm extractEntry src/memcache.cc
+183 silly gunzTarPerm extractEntry src/memcache.h
+184 silly gunzTarPerm extractEntry binding.gyp
+185 silly gunzTarPerm extractEntry test/benchmark.js
+186 silly gunzTarPerm extractEntry test/counter.js
+187 silly gunzTarPerm extractEntry test/stability.js
+188 silly gunzTarPerm extractEntry test/stability2.js
+189 silly gunzTarPerm extractEntry test/test.js
+190 silly gunzTarPerm extractEntry test/test2.js
+191 silly gunzTarPerm extractEntry test/test3.js
+192 silly gunzTarPerm extractEntry doc/asyncworker.md
+193 silly gunzTarPerm modified mode [ 'doc/asyncworker.md', 436, 420 ]
+194 silly gunzTarPerm extractEntry doc/callback.md
+195 silly gunzTarPerm modified mode [ 'doc/callback.md', 436, 420 ]
+196 silly gunzTarPerm extractEntry doc/converters.md
+197 silly gunzTarPerm modified mode [ 'doc/converters.md', 436, 420 ]
+198 silly gunzTarPerm extractEntry doc/errors.md
+199 silly gunzTarPerm modified mode [ 'doc/errors.md', 436, 420 ]
+200 silly gunzTarPerm extractEntry doc/maybe_types.md
+201 silly gunzTarPerm modified mode [ 'doc/maybe_types.md', 436, 420 ]
+202 silly gunzTarPerm extractEntry doc/methods.md
+203 silly gunzTarPerm modified mode [ 'doc/methods.md', 436, 420 ]
+204 silly gunzTarPerm extractEntry doc/new.md
+205 silly gunzTarPerm modified mode [ 'doc/new.md', 436, 420 ]
+206 silly gunzTarPerm extractEntry doc/buffers.md
+207 silly gunzTarPerm modified mode [ 'doc/buffers.md', 436, 420 ]
+208 silly gunzTarPerm extractEntry doc/object_wrappers.md
+209 silly gunzTarPerm modified mode [ 'doc/object_wrappers.md', 436, 420 ]
+210 silly gunzTarPerm extractEntry doc/persistent.md
+211 silly gunzTarPerm modified mode [ 'doc/persistent.md', 436, 420 ]
+212 silly gunzTarPerm extractEntry doc/scopes.md
+213 silly gunzTarPerm modified mode [ 'doc/scopes.md', 436, 420 ]
+214 silly gunzTarPerm extractEntry doc/script.md
+215 silly gunzTarPerm modified mode [ 'doc/script.md', 436, 420 ]
+216 silly gunzTarPerm extractEntry doc/string_bytes.md
+217 silly gunzTarPerm modified mode [ 'doc/string_bytes.md', 436, 420 ]
+218 silly gunzTarPerm extractEntry doc/v8_internals.md
+219 silly gunzTarPerm modified mode [ 'doc/v8_internals.md', 436, 420 ]
+220 silly gunzTarPerm extractEntry doc/v8_misc.md
+221 silly gunzTarPerm modified mode [ 'doc/v8_misc.md', 436, 420 ]
+222 silly gunzTarPerm extractEntry nan.h
+223 silly gunzTarPerm modified mode [ 'nan.h', 436, 420 ]
+224 silly gunzTarPerm extractEntry nan_callbacks.h
+225 silly gunzTarPerm modified mode [ 'nan_callbacks.h', 436, 420 ]
+226 silly gunzTarPerm extractEntry nan_callbacks_12_inl.h
+227 silly gunzTarPerm modified mode [ 'nan_callbacks_12_inl.h', 436, 420 ]
+228 silly gunzTarPerm extractEntry nan_converters.h
+229 silly gunzTarPerm modified mode [ 'nan_converters.h', 436, 420 ]
+230 silly gunzTarPerm extractEntry nan_converters_43_inl.h
+231 silly gunzTarPerm modified mode [ 'nan_converters_43_inl.h', 436, 420 ]
+232 silly gunzTarPerm extractEntry nan_converters_pre_43_inl.h
+233 silly gunzTarPerm modified mode [ 'nan_converters_pre_43_inl.h', 436, 420 ]
+234 silly gunzTarPerm extractEntry nan_implementation_12_inl.h
+235 silly gunzTarPerm modified mode [ 'nan_implementation_12_inl.h', 436, 420 ]
+236 silly gunzTarPerm extractEntry nan_implementation_pre_12_inl.h
+237 silly gunzTarPerm modified mode [ 'nan_implementation_pre_12_inl.h', 436, 420 ]
+238 silly gunzTarPerm extractEntry nan_maybe_43_inl.h
+239 silly gunzTarPerm modified mode [ 'nan_maybe_43_inl.h', 436, 420 ]
+240 silly gunzTarPerm extractEntry nan_maybe_pre_43_inl.h
+241 silly gunzTarPerm modified mode [ 'nan_maybe_pre_43_inl.h', 436, 420 ]
+242 silly gunzTarPerm extractEntry nan_new.h
+243 silly gunzTarPerm modified mode [ 'nan_new.h', 436, 420 ]
+244 silly gunzTarPerm extractEntry nan_object_wrap.h
+245 silly gunzTarPerm modified mode [ 'nan_object_wrap.h', 436, 420 ]
+246 silly gunzTarPerm extractEntry nan_persistent_12_inl.h
+247 silly gunzTarPerm modified mode [ 'nan_persistent_12_inl.h', 436, 420 ]
+248 silly gunzTarPerm extractEntry nan_persistent_pre_12_inl.h
+249 silly gunzTarPerm modified mode [ 'nan_persistent_pre_12_inl.h', 436, 420 ]
+250 silly gunzTarPerm extractEntry nan_string_bytes.h
+251 silly gunzTarPerm modified mode [ 'nan_string_bytes.h', 436, 420 ]
+252 silly gunzTarPerm extractEntry nan_typedarray_contents.h
+253 silly gunzTarPerm modified mode [ 'nan_typedarray_contents.h', 436, 420 ]
+254 silly gunzTarPerm extractEntry nan_weak.h
+255 silly gunzTarPerm modified mode [ 'nan_weak.h', 436, 420 ]
+256 silly gunzTarPerm extractEntry tools/package.json
+257 silly gunzTarPerm modified mode [ 'tools/package.json', 436, 420 ]
+258 silly gunzTarPerm extractEntry tools/README.md
+259 silly gunzTarPerm modified mode [ 'tools/README.md', 436, 420 ]
+260 silly gunzTarPerm extractEntry tools/1to2.js
+261 silly gunzTarPerm modified mode [ 'tools/1to2.js', 509, 493 ]
+262 silly gentlyRm /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116/node_modules is being purged
+263 verbose gentlyRm don't care about contents; nuking /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116/node_modules
+264 silly gentlyRm /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558/node_modules is being purged
+265 verbose gentlyRm don't care about contents; nuking /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558/node_modules
+266 silly doParallel preinstall 2
+267 silly preinstall nan@2.4.0 /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558
+268 info lifecycle nan@2.4.0~preinstall: nan@2.4.0
+269 silly preinstall node-shared-cache@1.6.2 /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116
+270 info lifecycle node-shared-cache@1.6.2~preinstall: node-shared-cache@1.6.2
+271 silly lifecycle nan@2.4.0~preinstall: no script for preinstall, continuing
+272 silly lifecycle node-shared-cache@1.6.2~preinstall: no script for preinstall, continuing
+273 silly doReverseSerial remove 0
+274 silly doSerial move 0
+275 silly doSerial finalize 2
+276 silly finalize /Users/tqumhieh/bots_dev/components/node_modules/nan
+277 silly finalize /Users/tqumhieh/bots_dev/components/node_modules/node-shared-cache
+278 silly doSerial build 2
+279 silly build nan@2.4.0
+280 info linkStuff nan@2.4.0
+281 silly linkStuff nan@2.4.0 has /Users/tqumhieh/bots_dev/components/node_modules as its parent node_modules
+282 verbose linkBins nan@2.4.0
+283 verbose linkMans nan@2.4.0
+284 silly build node-shared-cache@1.6.2
+285 info linkStuff node-shared-cache@1.6.2
+286 silly linkStuff node-shared-cache@1.6.2 has /Users/tqumhieh/bots_dev/components/node_modules as its parent node_modules
+287 verbose linkBins node-shared-cache@1.6.2
+288 verbose linkMans node-shared-cache@1.6.2
+289 silly doSerial global-link 0
+290 silly doParallel update-linked 0
+291 silly doSerial install 2
+292 silly install nan@2.4.0 /Users/tqumhieh/bots_dev/components/node_modules/.staging/nan-80658558
+293 info lifecycle nan@2.4.0~install: nan@2.4.0
+294 silly lifecycle nan@2.4.0~install: no script for install, continuing
+295 silly install node-shared-cache@1.6.2 /Users/tqumhieh/bots_dev/components/node_modules/.staging/node-shared-cache-cc8dc116
+296 info lifecycle node-shared-cache@1.6.2~install: node-shared-cache@1.6.2
+297 verbose lifecycle node-shared-cache@1.6.2~install: unsafe-perm in lifecycle true
+298 verbose lifecycle node-shared-cache@1.6.2~install: PATH: /usr/local/lib/node_modules/npm/bin/node-gyp-bin:/Users/tqumhieh/bots_dev/components/node_modules/node-shared-cache/node_modules/.bin:/Users/tqumhieh/bots_dev/components/node_modules/.bin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/go/bin:/usr/local/lib/gradle-3.2.1/bin
+299 verbose lifecycle node-shared-cache@1.6.2~install: CWD: /Users/tqumhieh/bots_dev/components/node_modules/node-shared-cache
+300 silly lifecycle node-shared-cache@1.6.2~install: Args: [ '-c', 'node-gyp rebuild' ]
+301 silly lifecycle node-shared-cache@1.6.2~install: Returned: code: 1  signal: null
+302 info lifecycle node-shared-cache@1.6.2~install: Failed to exec install script
+303 verbose unlock done using /Users/tqumhieh/.npm/_locks/staging-8395d4056d30f195.lock for /Users/tqumhieh/bots_dev/components/node_modules/.staging
+304 silly rollbackFailedOptional Starting
+305 silly rollbackFailedOptional Finishing
+306 silly runTopLevelLifecycles Finishing
+307 silly install printInstalled
+308 verbose stack Error: node-shared-cache@1.6.2 install: `node-gyp rebuild`
+308 verbose stack Exit status 1
+308 verbose stack     at EventEmitter.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/lifecycle.js:255:16)
+308 verbose stack     at emitTwo (events.js:106:13)
+308 verbose stack     at EventEmitter.emit (events.js:191:7)
+308 verbose stack     at ChildProcess.<anonymous> (/usr/local/lib/node_modules/npm/lib/utils/spawn.js:40:14)
+308 verbose stack     at emitTwo (events.js:106:13)
+308 verbose stack     at ChildProcess.emit (events.js:191:7)
+308 verbose stack     at maybeClose (internal/child_process.js:886:16)
+308 verbose stack     at Process.ChildProcess._handle.onexit (internal/child_process.js:226:5)
+309 verbose pkgid node-shared-cache@1.6.2
+310 verbose cwd /Users/tqumhieh/bots_dev/components
+311 error Darwin 16.7.0
+312 error argv "/usr/local/bin/node" "/usr/local/bin/npm" "install" "--save" "node-shared-cache"
+313 error node v6.10.3
+314 error npm  v3.10.10
+315 error code ELIFECYCLE
+316 error node-shared-cache@1.6.2 install: `node-gyp rebuild`
+316 error Exit status 1
+317 error Failed at the node-shared-cache@1.6.2 install script 'node-gyp rebuild'.
+317 error Make sure you have the latest version of node.js and npm installed.
+317 error If you do, this is most likely a problem with the node-shared-cache package,
+317 error not with npm itself.
+317 error Tell the author that this fails on your system:
+317 error     node-gyp rebuild
+317 error You can get information on how to open an issue for this project with:
+317 error     npm bugs node-shared-cache
+317 error Or if that isn't available, you can get their info via:
+317 error     npm owner ls node-shared-cache
+317 error There is likely additional logging output above.
+318 verbose exit [ 1, true ]
