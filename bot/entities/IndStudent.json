@@ -6,5 +6,13 @@
     "synonyms" : [ "just graduated", "studying", "finishing", "graduated last", "about to finish", "I am a student", "I am still a student" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity3" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Entity3",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

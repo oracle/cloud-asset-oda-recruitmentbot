@@ -1,5 +1,8 @@
 {
-  "name" : "Recruitment",
   "type" : "USER",
-  "intentTrainer" : "Sakura"
+  "name" : "Recruitment",
+  "displayName" : "Recruitment",
+  "version" : "1.0",
+  "intentTrainer" : "Sakura",
+  "trainingModels" : [ ]
 }

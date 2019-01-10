@@ -5967,5 +5967,13 @@
     "synonyms" : [ "Pega" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Company" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Company",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

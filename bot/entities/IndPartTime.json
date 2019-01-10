@@ -6,5 +6,13 @@
     "synonyms" : [ "parttime", "part-time", "2 days", "3 days", "4 days", "24 hour", "24 hours", "32 hour", "32 hours", "36 hour", "36 hours", "part time" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity1" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Entity1",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

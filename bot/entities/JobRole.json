@@ -36,5 +36,13 @@
     "synonyms" : [ "BDM", "business development" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter JobRole" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter JobRole",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

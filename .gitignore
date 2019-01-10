@@ -1,5 +1,5 @@
 */.DS_Store
-componentservice/node_modules/
+**/node_modules/
 componentservice/package/
 componentservice/reports/
 componentservice/*.zip

@@ -1,8 +1,0 @@
-{
-  "name" : "Facebook",
-  "enabled" : true,
-  "config" : {
-    "type" : "facebook"
-  },
-  "category" : "bot"
-}

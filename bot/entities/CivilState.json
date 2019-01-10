@@ -15,5 +15,13 @@
     "synonyms" : null
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity3" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Entity3",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

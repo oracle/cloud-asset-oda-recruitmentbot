@@ -135,5 +135,13 @@
     "synonyms" : null
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity1" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Entity1",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

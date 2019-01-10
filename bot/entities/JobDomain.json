@@ -48,5 +48,13 @@
     "synonyms" : [ "Content", "Portal", "Portals" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter JobDomain" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter JobDomain",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

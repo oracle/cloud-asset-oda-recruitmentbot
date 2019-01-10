@@ -96,5 +96,13 @@
     "synonyms" : null
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Sports" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Sports",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

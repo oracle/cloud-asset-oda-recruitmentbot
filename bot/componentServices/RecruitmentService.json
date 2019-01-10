@@ -1,0 +1,9 @@
+{
+  "type" : "HOSTED",
+  "name" : "RecruitmentService",
+  "version" : "1.1",
+  "packageFileName" : "customcomponents-1.0.0.tgz",
+  "packageChecksum" : "5874a524b23ffc6a9f4de84f58117799",
+  "runtime" : "node",
+  "enabled" : true
+}

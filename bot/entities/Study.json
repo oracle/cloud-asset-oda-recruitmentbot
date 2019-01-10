@@ -234,5 +234,13 @@
     "synonyms" : [ "AI" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Study" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Study",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

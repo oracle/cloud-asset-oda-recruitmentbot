@@ -48,5 +48,16 @@
     "synonyms" : [ "500.000", "500000", "500 K", "500 thousand" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity4", "What is your value for SalaryRange?" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "What is your value for SalaryRange?",
+    "sequenceNr" : null
+  }, {
+    "text" : "Please enter Entity4",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

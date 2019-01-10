@@ -54,5 +54,13 @@
     "synonyms" : [ "PhD" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Degree" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Degree",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

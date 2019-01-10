@@ -18,5 +18,13 @@
     "synonyms" : null
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter JobCategory" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter JobCategory",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

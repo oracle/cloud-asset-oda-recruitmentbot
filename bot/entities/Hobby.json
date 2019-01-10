@@ -831,5 +831,13 @@
     "synonyms" : [ "movies" ]
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Hobby" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Hobby",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

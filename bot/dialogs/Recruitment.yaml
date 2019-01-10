@@ -1,5 +1,5 @@
 metadata:
-  platformVersion: 1.0
+  platformVersion: "1.1"
 main: true
 name: Recruitment
 context:
@@ -22,7 +22,8 @@ context:
     sportsDone: "string"
     moreJobInfoProvided: "string"
     moreSuffix: "string"
-    jobs: "string"        
+    jobs: "string"      
+    yearsExperience: "int"
 states:
   reset:
     component: "System.ResetVariables"
@@ -105,7 +106,7 @@ states:
       variable: "allInfo"
     transitions:
       actions:
-        match: checkMoreInfo
+        match: startJobHooks1
         nomatch: checkRetry
   checkRetry:
     component: "System.ConditionEquals"
@@ -128,10 +129,17 @@ states:
       variableList: "jobInput"
     transitions:
       next: start    
+  startJobHooks1:
+    component: "System.SetVariable"
+    properties:
+      variable: "nextState"
+      value: "checkMoreInfo"
+    transitions:
+      next: "jobHooks"    
   checkMoreInfo:
     component: "System.Switch"
     properties:
-      source: "${((allInfo.value.JobRole!'')!='')?then('yes','no')}-${((allInfo.value.JobDomain!'')!='')?then('yes','no')}"
+      source: "${allInfo.value.JobRole?has_content?then('yes','no')}-${allInfo.value.JobDomain?has_content?then('yes','no')}"
       values:
       - "no-no"
       - "yes-no"
@@ -147,21 +155,21 @@ states:
     component: "System.Text"
     properties:
       variable: "moreJobInput"
-      prompt: "Could you elaborate a bit further, what exactly are you looking for? Do you have a specific job role in mind, or a domain${((allInfo.value.Industry!'')=='')?then(' or industry','')} you prefer to work in?"
+      prompt: "Could you elaborate a bit further, what exactly are you looking for? Do you have a specific job role in mind, or a domain${allInfo.value.Industry?has_content?then('',' or industry')} you prefer to work in?"
     transitions: 
       next: "combineInput"
   moreInfoJob:
     component: "System.Text"
     properties:
       variable: "moreJobInput"
-      prompt: "Could you elaborate a bit further, for example, do you have a specific job role${((allInfo.value.Industry!'')=='')?then(' or industry','')} in mind? "
+      prompt: "Could you elaborate a bit further, for example, do you have a specific job role${allInfo.value.Industry?has_content?then('',' or industry')} in mind? "
     transitions: 
       next: "combineInput"
   moreInfoDomain:
     component: "System.Text"
     properties:
       variable: "moreJobInput"
-      prompt: "Could you elaborate a bit further, for example, is there a specific domain${((allInfo.value.Industry!'')=='')?then(' or industry','')} you would like to work in? Or can you give a salary indication if that is important to you?"
+      prompt: "Could you elaborate a bit further, for example, is there a specific domain${allInfo.value.Industry?has_content?then('',' or industry')} you would like to work in? Or can you give a salary indication if that is important to you?"
     transitions:
       next: "combineInput"
   combineInput:
@@ -188,9 +196,10 @@ states:
     component: "System.Output"
     properties:
       keepTurn: true
-      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${((allInfo.value.JobRole!'')!='')?then(jobCategories.value[allInfo.value.JobRole]+' position ',((allInfo.value.JobCategory!'')!='')?then(allInfo.value.JobCategory+' job ',''))}for you${((allInfo.value.JobDomain!'')!='')?then(', especially in the '+allInfo.value.JobDomain+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry+' area',''))}!"
+#      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain[0]+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry[0]+' area',''))}!"
+      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain[0]+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry[0]+' area',''))}!"
     transitions: {}
-  startJobHooks:
+  startJobHooks2:
     component: "System.SetVariable"
     properties:
       variable: "nextState"
@@ -240,7 +249,7 @@ states:
       variable: "nextState"
       value: "askMoreSelf"
     transitions:
-      next: "selfHooks"      
+      next: "jobHooks"      
   askMoreSelf:
     component: "System.Text"
     properties:
@@ -255,71 +264,42 @@ states:
     transitions:
       actions:
         match: startSelfHooks2
-        nomatch: setIntentInput
+        nomatch: computeExperience
   startSelfHooks2:
     component: "System.SetVariable"
     properties:
       variable: "nextState"
-      value: "setIntentInput"
+      value: "computeExperience"
     transitions:
-      next: "selfHooks"      
+      next: "jobHooks"      
   unresolvedSelf:
     component: "System.Output"
     properties:
       keepTurn: true
       text: "Not sure I got that, but let's continue anyway ;-)"
     transitions: 
-      next: "setIntentInput"
+      next: "startSelfHooks2"
 
-  # we have some multi-value entities like company, pastime, and education. Unfortunately, MatchEntity comp only matches first value
-  # so we do an intent matching so we can get arrays of entity matches for these entities
-  setIntentInput:
-    component: "System.SetVariable"
-    properties:
-      variable: "allInput" 
-      # we start with "a " so we always have matching Dummy intent so we can retrieve all entity matches :-)
-      value: "a ${allJobInput} ${selfInput} ${selfMoreInput}"
-  intent:
-    component: "System.Intent"
-    properties:
-      sourceVariable: "allInput"
-      variable: "iresult"
-      confidenceThreshold: 0.1
-    transitions: {}
-  startJobHooks2:
-    component: "System.SetVariable"
-    properties:
-      variable: "nextState"
-      value: "updateJobInfo"
-    transitions:
-      next: "jobHooks"      
-  # populateCompositeEntity sets a child entity value to an array of ALL matches found, if not value found it sets the value to empty array. TODO: rename to populateMutiValueEntities
-  updateJobInfo:
-    component: "populateCompositeEntity"
-    properties:
-      variable: "allInfo"
-      nlpVariable: "iresult"
-      entityNames: "JobCategory,JobRole,JobDomain,JobKeywords,Industry,Salary"
-  updateSelfInfo:
-    component: "populateCompositeEntity"
-    properties:
-      variable: "allInfo"
-      nlpVariable: "iresult"
-      entityNames: "Pastime,Language,Education,Company,Degree"
   computeExperience:
     component: "computeExperience"
     properties:
-      nlpVariable: "iresult"
       outputVariable: "yearsExperience"
       entityName: "YearsExperience"
-  computeAge:
-    component: "computeAge"
-    properties:
-      nlpVariable: "iresult"
-      outputVariable: "age"
-      entityName: "Age"
+#  computeAge:
+#    component: "computeAge"
+#    properties:
+#      outputVariable: "age"
+#      entityName: "Age"
   findJobs:
     component: "findJobs"
+#  findJobs:
+#    component: "System.SetVariable"
+#    properties:
+#      variable: "jobs" 
+#      value:
+#      - title: "CHEESE"
+#        description: "Classic marinara sauce topped with whole milk mozzarella cheese."
+#        image: "https://cdn.pixabay.com/photo/2017/09/03/10/35/pizza-2709845__340.jpg"
   finalMessage:
     component: "System.CommonResponse"
     properties:
@@ -356,22 +336,21 @@ states:
       text: |-
         Here is a summary of the profile information you provided:
         
-        Job Category: ${allInfo.value.JobCategory?join(' or ')}
-        Domain: ${allInfo.value.JobDomain?join(' or ')}
-        Role: ${allInfo.value.JobRole?join(' or ')}
-        Industry: ${allInfo.value.Industry?join(' or ')}
-        Keywords: ${allInfo.value.JobKeywords?join(', ')}
-        Salary Indication: ${(allInfo.value.Salary?size!=0)?then(allInfo.value.Salary?join('#')?upper_case?replace(' ','')?replace('K','.000')?replace('-','.000')?replace('#','-'),(iresult.value.entityMatches['CURRENCY']?has_content)?then(allInfo.value.CURRENCY.amount,""))}
+        Job Category: ${allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory?join(' or '),'')}
+        Domain: ${allInfo.value.JobDomain?has_content?then(allInfo.value.JobDomain?join(' or '),'')}
+        Role: ${allInfo.value.JobRole?has_content?then(allInfo.value.JobRole?join(' or '),'')}
+        Industry: ${allInfo.value.Industry?has_content?then(allInfo.value.Industry?join(' or '),'')}
+        Keywords: ${allInfo.value.JobKeywords?has_content?then(allInfo.value.JobKeywords?join(', '),'')}
+        Salary Indication: ${allInfo.value.Salary?has_content?then(allInfo.value.Salary?join('#')?upper_case?replace(' ','')?replace('K','.000')?replace('-','.000')?replace('#','-'),(allInfo.value.CURRENCY?has_content)?then(allInfo.value.CURRENCY.totalCurrency,""))}
         Parttime: ${allInfo.value.IndPartTime?has_content?then("Yes","No")}        
         Civil State: ${allInfo.value.CivilState!""}
         Student: ${allInfo.value.IndStudent?has_content?then("Yes","No")}
-        Employers: ${allInfo.value.Company?join(' and ')}
+        Employers: ${allInfo.value.Company?has_content?then(allInfo.value.Company?join(' and '),'')}
         Work Experience: ${(yearsExperience.value!=0)?then(yearsExperience.value+' years','')}
-        Education: ${allInfo.value.Education?join(' and ')}
-        Degrees: ${allInfo.value.Degree?join(' and ')}
-        Languages: ${allInfo.value.Language?join(' and ')}
-        Hobbies: ${allInfo.value.Pastime?join(' and ')}
-        
+        Education: ${allInfo.value.Education?has_content?then(allInfo.value.Education?join(' and '),'')}
+        Degrees: ${allInfo.value.Degree?has_content?then(allInfo.value.Degree?join(' and '),'')}
+        Languages: ${allInfo.value.Language?has_content?then(allInfo.value.Language?join(' and '),'')}
+        Hobbies: ${allInfo.value.Pastime?has_content?then(allInfo.value.Pastime?join(' and '),'')}        
 #        Age: ${age.value!""}
     transitions:
       return: "done"
@@ -410,7 +389,7 @@ states:
       variable: "partTimeDone"
       value: "${allInfo.value.IndPartTime?has_content?then('true','false')}"
     transitions:
-      next: "${nextState}"
+      next: "selfHooks"
 
 
 ##### SELF HOOKS ####
@@ -418,33 +397,25 @@ states:
     component: "System.Output"
     properties:
       keepTurn: true
-      text: "${((allInfo.value.Sports!'')=='Yoga' && (yogaDone!='true'))?then('A Yoga-enthusiast huh? I love it! In fact, we do in-house Yoga sessions sometimes. Good for your body and soul!','')}"
+      text: "${(allInfo.value.Sports?has_content && allInfo.value.Sports[0]='Yoga' && yogaDone!='true')?then('A Yoga-enthusiast huh? I love it! In fact, we do in-house Yoga sessions sometimes. Good for your body and soul!','')}"
     transitions: {}
   setYogaDone:
     component: "System.SetVariable"
     properties:
       variable: "yogaDone"
-      value: "${((allInfo.value.Sports!'')=='Yoga')?then('true','false')}"
+      value: "${(allInfo.value.Sports?has_content && allInfo.value.Sports[0]='Yoga')?then('true','false')}"
     transitions:       
-      next: "${((allInfo.value.Sports!'')=='Yoga')?then(nextState,'sportsInfo')}"      
+      next: "${(allInfo.value.Sports?has_content && allInfo.value.Sports[0]='Yoga')?then(nextState,'sportsInfo')}"      
   sportsInfo:
     component: "System.Output"
     properties:
       keepTurn: true
-      text: "${((allInfo.value.Sports!'')!='' && (sportsDone!='true'))?then(allInfo.value.Sports+'-enthusiast huh? I love it! In fact, we offer great benefits to our employees for them to maintain a healthy lifestyle. We have discounts on fitness clubs, various sports etc. ','')}"
+      text: "${(allInfo.value.Sports?has_content && sportsDone!='true')?then(allInfo.value.Sports[0]+'-enthusiast huh? I love it! In fact, we offer great benefits to our employees for them to maintain a healthy lifestyle. We have discounts on fitness clubs, various sports etc. ','')}"
     transitions: {}
   setSportsDone:
     component: "System.SetVariable"
     properties:
       variable: "sportsDone"
-      value: "${((allInfo.value.Sports!'')!='')?then('true','false')}"
+      value: "${(allInfo.value.Sports?has_content)?then('true','false')}"
     transitions:       
       next: "${nextState}"
-# call job hooks as well, might be provided during self info gathering   
-  doJobHooks:
-    component: "System.SetVariable"
-    properties:
-      variable: "nextState"
-      value: "${nextState}"
-    transitions:
-      next: "jobHooks"    

@@ -87,5 +87,16 @@
     "synonyms" : null
   } ],
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity1", "What is your value for Industry?" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Entity1",
+    "sequenceNr" : null
+  }, {
+    "text" : "What is your value for Industry?",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }

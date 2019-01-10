@@ -3,5 +3,13 @@
   "patternExpression" : "(for|worked|working|work|have|about|with|and) \\d{1,2} year",
   "type" : "PATTERNBASED",
   "namedEntityRuleParams" : [ ],
-  "prompts" : [ "Please enter Entity2" ]
+  "multiValue" : false,
+  "fuzzyMatch" : false,
+  "promptForDisambiguation" : true,
+  "botPrompts" : [ {
+    "text" : "Please enter Entity2",
+    "sequenceNr" : null
+  } ],
+  "validationRules" : [ ],
+  "compositeBagItems" : [ ]
 }
