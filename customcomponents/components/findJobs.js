@@ -26,8 +26,8 @@ module.exports = {
         categories.push(jobCategories.length>0 ?  jobCategories[0] : '');
         categories.push(jobCategories.length>1 ?  jobCategories[1] : categories[0]);
         categories.push(jobCategories.length>2 ?  jobCategories[2] : categories[0]);
-        roles.push(jobRoles.length>0 ?  jobRolef[0] : '');
-        roles.push(jobRoles.length>1 ?  jobRoled[1] : roles[0]);
+        roles.push(jobRoles.length>0 ?  jobRoles[0] : '');
+        roles.push(jobRoles.length>1 ?  jobRoles[1] : roles[0]);
         roles.push(jobRoles.length>2 ?  jobRoles[2] : roles[0]);
         const domain1 = jobDomains.length>0 ?  jobDomains[0] : undefined;
         const domain2 = jobDomains.length>1 ?  jobDomains[1] : domain1;
