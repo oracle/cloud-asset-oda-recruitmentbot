@@ -91,10 +91,10 @@
   "fuzzyMatch" : false,
   "promptForDisambiguation" : true,
   "botPrompts" : [ {
-    "text" : "Please enter Entity1",
+    "text" : "What is your value for Industry?",
     "sequenceNr" : null
   }, {
-    "text" : "What is your value for Industry?",
+    "text" : "Please enter Entity1",
     "sequenceNr" : null
   } ],
   "validationRules" : [ ],

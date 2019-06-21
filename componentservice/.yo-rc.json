@@ -1,7 +1,0 @@
-{
-  "@oracle/bots-cli": {
-    "OUTPUT_LANGUAGE": "js",
-    "COMPONENT_DIR": "components",
-    "COLLECTION_NAME": ""
-  }
-}

@@ -652,9 +652,9 @@
       "errorMessage" : null,
       "namedEntityRuleParams" : [ ],
       "botPrompts" : [ {
-        "text" : "Please enter Entity1"
-      }, {
         "text" : "What is your value for Industry?"
+      }, {
+        "text" : "Please enter Entity1"
       } ],
       "validationRules" : [ ]
     },
@@ -1369,9 +1369,9 @@
       "errorMessage" : null,
       "namedEntityRuleParams" : [ ],
       "botPrompts" : [ {
-        "text" : "Please enter Pastime"
-      }, {
         "text" : "What is your value for Pastime?"
+      }, {
+        "text" : "Please enter Pastime"
       } ],
       "validationRules" : [ ]
     },
@@ -1685,9 +1685,6 @@
         "synonyms" : null
       }, {
         "canonicalName" : "Enel",
-        "synonyms" : null
-      }, {
-        "canonicalName" : "Merck",
         "synonyms" : null
       }, {
         "canonicalName" : "National Australia Bank",

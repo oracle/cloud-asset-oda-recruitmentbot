@@ -7,7 +7,10 @@
     "entity" : "AllInfo"
   } ],
   "exampleData" : [ {
-    "sentence" : "I want a well-paid bot",
+    "sentence" : "I need a job",
+    "exampleEntities" : [ ]
+  }, {
+    "sentence" : "I am looking for a job",
     "exampleEntities" : [ ]
   }, {
     "sentence" : "What kind of job do you have",
@@ -16,10 +19,7 @@
     "sentence" : "show me the job you have",
     "exampleEntities" : [ ]
   }, {
-    "sentence" : "I am looking for a job",
-    "exampleEntities" : [ ]
-  }, {
-    "sentence" : "I need a job",
+    "sentence" : "I want a well-paid bot",
     "exampleEntities" : [ ]
   } ]
 }

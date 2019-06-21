@@ -1,8 +1,8 @@
 {
-  "invocationName" : "Recruitment",
+  "invocationName" : "RecruitmentNew",
   "shortDescription" : "This is Recruitment",
   "fullDescription" : null,
   "sampleInvocations" : [ "An example utterance" ],
-  "skillBotName" : "Recruitment",
+  "skillBotName" : "RecruitmentNew",
   "skillBotVersion" : "1.0"
 }

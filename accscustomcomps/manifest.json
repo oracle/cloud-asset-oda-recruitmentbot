@@ -1,7 +1,0 @@
-{
-    "runtime":{"majorVersion" : "8"},
-    "command":"node index.js",
-    "release" : {},
-    "notes":""
-  }
-  

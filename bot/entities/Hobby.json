@@ -299,9 +299,6 @@
     "canonicalName" : "Going to movies",
     "synonyms" : null
   }, {
-    "canonicalName" : "Golf",
-    "synonyms" : null
-  }, {
     "canonicalName" : "Go Kart Racing",
     "synonyms" : null
   }, {
@@ -396,9 +393,6 @@
     "synonyms" : null
   }, {
     "canonicalName" : "Kites",
-    "synonyms" : null
-  }, {
-    "canonicalName" : "Kite Boarding",
     "synonyms" : null
   }, {
     "canonicalName" : "Knitting",
@@ -719,9 +713,6 @@
     "canonicalName" : "Tea Tasting",
     "synonyms" : null
   }, {
-    "canonicalName" : "Storytelling",
-    "synonyms" : null
-  }, {
     "canonicalName" : "Textiles",
     "synonyms" : null
   }, {
@@ -788,9 +779,6 @@
     "canonicalName" : "Writing Songs",
     "synonyms" : null
   }, {
-    "canonicalName" : "Yoga",
-    "synonyms" : null
-  }, {
     "canonicalName" : "Yoyo",
     "synonyms" : null
   }, {
@@ -805,15 +793,6 @@
   }, {
     "canonicalName" : "Sailing",
     "synonyms" : null
-  }, {
-    "canonicalName" : "Sports",
-    "synonyms" : null
-  }, {
-    "canonicalName" : "Cycling",
-    "synonyms" : [ "Bicycling" ]
-  }, {
-    "canonicalName" : "Fitness",
-    "synonyms" : [ "keeping fit" ]
   }, {
     "canonicalName" : "Collect vintage clothing",
     "synonyms" : [ "vintage clothing" ]
