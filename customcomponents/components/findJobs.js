@@ -14,8 +14,6 @@ module.exports = {
     ),
 
     invoke: (conversation, done) => {
-//        const jobInfo = JSON.parse(jobInfoTxt);
-//        const images = JSON.parse(imagesTxt);
         const allInfo = conversation.variable("allInfo");
         let jobCategories = allInfo.JobCategory || [];
         let categories = []
@@ -58,7 +56,6 @@ module.exports = {
                 desc+= (desc=='' ? 'E' : ', e')+  "xperience in "+industries[0]+" is a pre"
             }
             desc+= (desc=='' ? 'C' : ', c' )+  "ompany car and excellent benefits package included";
-//            desc+= '.';
             
             return desc;
         }
