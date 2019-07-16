@@ -1,3 +1,6 @@
+/*******************************************************************************
+ Copyright (c) 2019, Oracle and/or its affiliates. All rights reserved.
+******************************************************************************/
 "use strict";
 const jobInfo = require('./jobInfo.json');
 const images = require('./images.json');
