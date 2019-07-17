@@ -12,7 +12,7 @@
   "repository": {},
   "dependencies": {},
   "devDependencies": {
-    "@oracle/bots-node-sdk": "^2.1.0",
-    "express": "^4.16.3"
+    "@oracle/bots-node-sdk": "^2.2.0",
+    "express": "^4.17.1"
   }
 }

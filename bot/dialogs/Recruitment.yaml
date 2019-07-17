@@ -72,7 +72,7 @@ states:
           text: "Hello, I am Lisa, your digital recruitment assistant for marketing and sales jobs at Oracle."  
         - type: "attachment" 
           attachmentType: "image" 
-          attachmentUrl: "https://4.bp.blogspot.com/-rNAojDzy5L4/VbUTdR1_ygI/AAAAAAAATD0/nW787POU4-A/s1600/oracle.png"
+          attachmentUrl: "https://somehost/photos/recruimentPhoto.png"
         - type: "text"  
           text: "You can use me to find a job that matches your wishes, interests and qualifications." 
           actions: 
@@ -83,7 +83,7 @@ states:
           - label: "Visit Website"
             type: "url"
             payload: 
-              url: "https://oracle.taleo.net/careersection/2/jobsearch.ftl?lang=en"
+              url: "https://somehost/somerecruitmentsite/index.html"
     transitions: {}
   setBoarded:
     component: "System.SetVariable"
@@ -314,7 +314,7 @@ states:
             - label: "More Info"
               type: "url"
               payload: 
-                url: "https://www.oracle.com/uk/corporate/careers/work-at-oracle/professional-development.html"
+                url: "https://somehost/moreinfo/professional-development.html"
         globalActions: 
         - label: "My Profile"
           type: "postback"
@@ -366,7 +366,7 @@ states:
           - label: "Visit Website"
             type: "url"
             payload: 
-              url: "https://oracle.taleo.net/careersection/2/jobsearch.ftl?lang=en"
+              url: "https://somehost/somerecruitmentsite/index.html"
     transitions:
       return: "done"      
 
