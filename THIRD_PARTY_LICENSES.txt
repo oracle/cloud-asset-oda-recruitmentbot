@@ -1,0 +1,2 @@
+Oracle Bots Node.js SDK, Version: 2.2.0 (UPL)
+Express.js, Version: 4.17.1 (MIT)
