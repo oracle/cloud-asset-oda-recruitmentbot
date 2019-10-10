@@ -10,8 +10,8 @@
     "start": "npm run bots-node-sdk -- service ."
   },
   "repository": {},
-  "dependencies": {},
-  "devDependencies": {
+  "devDependencies": {},
+  "dependencies": {
     "@oracle/bots-node-sdk": "^2.2.0",
     "express": "^4.17.1"
   }
