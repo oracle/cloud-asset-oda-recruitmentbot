@@ -5,11 +5,13 @@ This sample bot represents best practices in building intelligent bots using Ora
 ## Getting Started
 1. Create a zip file from all files and folders in bot directory, but do NOT include the bot folder itself as top-level folder in the zip file
 2. Import the bot zip file you just created in your ODA instance, and train the bot
-3. Go to the tester and enter a greeting like "hi"
-4. Tap on "Let's get started button"
-5. Answer the bot questions
-6. Optional: replace the dummy URL links in dialog YAML file on lines 75, 86, 317 and 369 with real URLs
-7. Optional: replace the dummy images in customcomponents/components/images.json with real image URLs
+3. Go to customcomponents folder and run 'npm pack' in this folder. This creates a file customcomponents-1.0.0.tgz in the same folder
+4. Go to the "Components" page in the ODA UI, click on "+Service" button and enter a name for the service and upload the tgz file you created in step 3.
+5. Go to the bot tester and enter a greeting like "hi"
+6. Tap on "Let's get started button"
+7. Answer the bot questions
+8. Optional: replace the dummy URL links in dialog YAML file on lines 75, 86, 317 and 369 with real URLs
+9. Optional: replace the dummy images in customcomponents/components/images.json with real image URLs
 
 ## Folder Structure
 
