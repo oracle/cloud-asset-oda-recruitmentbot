@@ -29,13 +29,13 @@ module.exports = {
         console.log("MATCHS: "+JSON.stringify(matches));
         const regex = /\d{1,2}/
         let years = 0;
-        // the entiy match is an array of matches of YearsExperience regular expression
-        // so we loop over the macthes, extract the actual number from the reg exp match
+        // the entity match is an array of matches of YearsExperience regular expression
+        // so we loop over the matches, extract the actual number from the reg exp match
         // and add it up
         years = matches.reduce((accumulator, currentValue) => accumulator + parseInt(currentValue.match(regex)[0]),years);
         if (years===0) {
-            // if no eperience found, and we have te graduation year, we derive the years experience
-            // from graduation year (assuming it is a resoanble value)
+            // if no experience found, and we have the graduation year, we derive the years experience
+            // from graduation year (assuming it is a reasonable value)
             let gradYear = allInfo.GraduationYear;
             if (gradYear) {
                 // extract the year from the reg exp

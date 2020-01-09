@@ -15,7 +15,6 @@ context:
     allInput: "string"
     retry: "string"
     retrySelf: "string"
-    iresult: "nlpresult"
     age: "int"
     jobCategories: "string"
     nextState: "string"
@@ -30,7 +29,7 @@ states:
   reset:
     component: "System.ResetVariables"
     properties:
-      variableList: "allInfo,jobInput,moreJobInput,allInput,selfInput,selfMoreInput,allInput,retry,retrySelf,iresult,age,nextState,partTimeDone,yogaDone,  sportsDone,moreJobInfoProvided,moreSuffix,jobs"
+      variableList: "allInfo,jobInput,moreJobInput,allInput,selfInput,selfMoreInput,allInput,retry,retrySelf,age,nextState,partTimeDone,yogaDone,  sportsDone,moreJobInfoProvided,moreSuffix,jobs"
   # do clearBoarded for now, so we get welcome message every time, better for demos. Comment out this state if you want to see onboarding message only first time 
   clearBoarded:
     component: "System.SetVariable"
@@ -195,8 +194,7 @@ states:
     component: "System.Output"
     properties:
       keepTurn: true
-#      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain[0]+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry[0]+' area',''))}!"
-      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ',''))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain?join(' or ')+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry?join(' or ')+' area',''))}!"
+      text: "${((moreJobInfoProvided!'')=='false')?then('Sorry, didn\\'t get that, but let\\'s move on! ','Thank you, ')}I'm sure I can find a suitable ${allInfo.value.JobRole?has_content?then(jobCategories.value[allInfo.value.JobRole[0]]+' position ',allInfo.value.JobCategory?has_content?then(allInfo.value.JobCategory[0]+' job ','position '))}for you${allInfo.value.JobDomain?has_content?then(', especially in the '+allInfo.value.JobDomain?join(' or ')+' domain',  allInfo.value.Industry?has_content?then(', especially in the '+allInfo.value.Industry?join(' or ')+' area',''))}!"
     transitions: {}
   startJobHooks2:
     component: "System.SetVariable"
